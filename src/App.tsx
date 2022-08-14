@@ -4,15 +4,19 @@ import { strings } from './constants/strings';
 import { MarginLayout } from './components/layout';
 import Headshot from './assets/images/headshot.jpg';
 
-const Content = styled('div')`
-  display: flex;
-  flex-direction: row;
-  justify-content: space-between;
-  margin-top: 2rem;
+const Row = styled('div')`
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    width: 100%;
+    margin-bottom: 2rem;
+`;
 
-  >* {
-    width: 45%;
-  }
+const Column = styled('div')`
+    display: flex;
+    flex-direction: column;
+    flex-basis: 100%;
+    flex: 1;
 `;
 
 const App = () => {
@@ -30,13 +34,18 @@ const App = () => {
         src={Headshot}
       />
 
-      <Typography variant='h1'>{strings.HEY}</Typography>
-      <Typography variant='body1'>{strings.FRONTEND_SOFTWARE_DEVELOPER}</Typography>
-      <Button variant="outlined">{strings.GET_IN_TOUCH}</Button>
+      <Row>
+        <Column>
+          <Typography variant='h1'>{strings.HEY}</Typography>
+          <Typography variant='body1'>{strings.FRONTEND_SOFTWARE_DEVELOPER}</Typography>
+        </Column>
 
-      <Content>
-        <Typography variant='body1'>{strings.ABOUT}</Typography>
-      </Content>
+        <Column>
+          <Button variant="outlined">{strings.GET_IN_TOUCH}</Button>
+        </Column>
+      </Row>
+
+      <Typography variant='body1'>{strings.ABOUT}</Typography>
 
     </MarginLayout>
   );
