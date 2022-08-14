@@ -1,11 +1,11 @@
 import React from 'react';
 
 interface MarginLayoutProps {
-    children: any
+    children: React.ReactNode;
 }
 
-const MarginLayout = ({ children }: MarginLayoutProps) => {
-    return children
+const MarginLayout = (props: MarginLayoutProps) => {
+    return <>{props.children}</>;
 }
 
 export default MarginLayout;
