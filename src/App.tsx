@@ -47,11 +47,11 @@ const App = () => {
 
       <Row>
         <Column>
-          <Typography variant='body1'>{strings.ABOUT}</Typography>
+          <Typography variant='bodyCode'>{strings.ABOUT}</Typography>
         </Column>
 
         <Column>
-          <Typography variant='body1'>{strings.EXPERIENCE}</Typography>
+          <Typography variant='bodyCode'>{strings.EXPERIENCE}</Typography>
         </Column>
       </Row>
 
