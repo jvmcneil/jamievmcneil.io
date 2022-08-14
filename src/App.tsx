@@ -45,7 +45,15 @@ const App = () => {
         </Column>
       </Row>
 
-      <Typography variant='body1'>{strings.ABOUT}</Typography>
+      <Row>
+        <Column>
+          <Typography variant='body1'>{strings.ABOUT}</Typography>
+        </Column>
+
+        <Column>
+          <Typography variant='body1'>{strings.EXPERIENCE}</Typography>
+        </Column>
+      </Row>
 
     </MarginLayout>
   );
