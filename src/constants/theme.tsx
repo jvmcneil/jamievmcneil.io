@@ -1,23 +1,8 @@
 import { createTheme } from '@mui/material';
 
-declare module '@mui/material/styles' {
-    interface TypographyVariants {
-        bodyCode: React.CSSProperties;
-    }
-
-    // allow configuration using `createTheme`
-    interface TypographyVariantsOptions {
-        bodyCode?: React.CSSProperties;
-    }
-}
-
-// Update the Typography's variant prop options
-declare module '@mui/material/Typography' {
-    interface TypographyPropsVariantOverrides {
-        bodyCode: true;
-    }
-}
-
+const { palette } = createTheme();
+const { augmentColor } = palette;
+const createColor = (mainColor: string) => augmentColor({ color: { main: mainColor } });
 
 export const theme = createTheme({
     typography: {
@@ -28,5 +13,8 @@ export const theme = createTheme({
             fontFamily: 'Fira Code',
             color: "white"
         }
-    }
+    },
+    palette: {
+        pink: createColor('#F20587'),
+    },
 });
