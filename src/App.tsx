@@ -1,5 +1,5 @@
 import React from 'react';
-import { Box, Button, Typography, styled } from '@mui/material';
+import { Box, Button, Link, Typography, styled } from '@mui/material';
 import { strings } from './constants/strings';
 import { MarginLayout } from './components/layout';
 import Headshot from './assets/images/headshot.jpg';
@@ -57,15 +57,15 @@ const App = () => {
 
       <Row>
         <Column>
-          <Typography variant='body1'>LinkedIn</Typography>
+          <Link href='https://www.linkedin.com/in/jamiemcneil/' target="_blank" rel="noopener"><Typography variant='body1'>LinkedIn</Typography></Link>
         </Column>
 
         <Column>
-          <Typography variant='body1'>Instagram</Typography>
+          <Link href='https://github.com/jvmcneil' target="_blank" rel="noopener"><Typography variant='body1'>GitHub</Typography></Link>
         </Column>
 
         <Column>
-          <Typography variant='body1'>Resume</Typography>
+          <Link href='https://www.instagram.com/radicalnetrunner/' target="_blank" rel="noopener"><Typography variant='body1'>Instagram</Typography></Link>
         </Column>
       </Row>
 
