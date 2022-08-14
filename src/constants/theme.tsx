@@ -15,6 +15,7 @@ export const theme = createTheme({
         }
     },
     palette: {
+        // @ts-ignore TODO: Fix TS error
         pink: createColor('#F20587'),
     },
 });
