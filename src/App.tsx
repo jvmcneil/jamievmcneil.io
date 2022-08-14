@@ -55,6 +55,20 @@ const App = () => {
         </Column>
       </Row>
 
+      <Row>
+        <Column>
+          <Typography variant='body1'>Social Media Link</Typography>
+        </Column>
+
+        <Column>
+          <Typography variant='body1'>Social Media Link</Typography>
+        </Column>
+
+        <Column>
+          <Typography variant='body1'>Social Media Link</Typography>
+        </Column>
+      </Row>
+
     </MarginLayout>
   );
 }
