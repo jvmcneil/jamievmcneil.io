@@ -21,8 +21,12 @@ declare module '@mui/material/Typography' {
 
 export const theme = createTheme({
     typography: {
+        allVariants: {
+            color: "white"
+        },
         bodyCode: {
-            fontFamily: 'Fira Code'
+            fontFamily: 'Fira Code',
+            color: "white"
         }
     }
 });
