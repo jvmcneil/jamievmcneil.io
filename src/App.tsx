@@ -57,15 +57,15 @@ const App = () => {
 
       <Row>
         <Column>
-          <Typography variant='body1'>Social Media Link</Typography>
+          <Typography variant='body1'>LinkedIn</Typography>
         </Column>
 
         <Column>
-          <Typography variant='body1'>Social Media Link</Typography>
+          <Typography variant='body1'>Instagram</Typography>
         </Column>
 
         <Column>
-          <Typography variant='body1'>Social Media Link</Typography>
+          <Typography variant='body1'>Resume</Typography>
         </Column>
       </Row>
 
