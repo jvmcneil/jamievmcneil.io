@@ -52,7 +52,7 @@ const App = () => {
           </Column>
 
           <Column>
-            <Button variant="contained" color='pink' sx={{ width: 'fit-content' }}>{strings.GET_IN_TOUCH}</Button>
+            <Button component={Link} href='mailto:jamievmcneil@gmail.com?subject=Jamie%20McNeil%20Website%20Enquiry' underline="none" target="_blank" variant="contained" color='pink' sx={{ width: 'fit-content' }}>{strings.GET_IN_TOUCH}</Button>
           </Column>
         </Row>
 
