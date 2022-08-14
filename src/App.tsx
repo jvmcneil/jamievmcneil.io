@@ -7,20 +7,22 @@ import Headshot from './assets/images/headshot.jpg';
 const Background = styled('div')`
     position: absolute;
     background-color: #F20587;
-    background-image: -webkit-linear-gradient(30deg, #F20587 50%, #033E8C 50%);
+    background-image: linear-gradient(30deg, #033E8C, #F20587);
     min-height: 100%;
 `;
 
 const Row = styled('div')`
     display: flex;
+    align-items: center;
     flex-direction: row;
     flex-wrap: wrap;
     width: 100%;
     margin-bottom: 2rem;
-`;
+    `;
 
 const Column = styled('div')`
     display: flex;
+    justify-content: center;
     flex-direction: column;
     flex-basis: 100%;
     flex: 1;
@@ -50,7 +52,7 @@ const App = () => {
           </Column>
 
           <Column>
-            <Button variant="outlined">{strings.GET_IN_TOUCH}</Button>
+            <Button variant="contained" color='pink' sx={{ width: 'fit-content' }}>{strings.GET_IN_TOUCH}</Button>
           </Column>
         </Row>
 
