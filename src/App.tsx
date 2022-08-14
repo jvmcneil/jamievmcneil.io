@@ -66,15 +66,15 @@ const App = () => {
 
         <Row>
           <Column>
-            <Link href='https://www.linkedin.com/in/jamiemcneil/' target="_blank" rel="noopener"><Typography variant='body1'>LinkedIn</Typography></Link>
+            <Link href='https://www.linkedin.com/in/jamiemcneil/' underline="none" target="_blank" rel="noopener"><Typography variant='body1'>LinkedIn</Typography></Link>
           </Column>
 
           <Column>
-            <Link href='https://github.com/jvmcneil' target="_blank" rel="noopener"><Typography variant='body1'>GitHub</Typography></Link>
+            <Link href='https://github.com/jvmcneil' underline="none" target="_blank" rel="noopener"><Typography variant='body1'>GitHub</Typography></Link>
           </Column>
 
           <Column>
-            <Link href='https://www.instagram.com/radicalnetrunner/' target="_blank" rel="noopener"><Typography variant='body1'>Instagram</Typography></Link>
+            <Link href='https://www.instagram.com/radicalnetrunner/' underline="none" target="_blank" rel="noopener"><Typography variant='body1'>Instagram</Typography></Link>
           </Column>
         </Row>
 
