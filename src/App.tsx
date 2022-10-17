@@ -8,6 +8,7 @@ const Background = styled('div')`
   position: absolute;
   background-color: #f20587;
   background-image: linear-gradient(30deg, #033e8c, #f20587);
+  width: 100%;
   min-height: 100%;
 `;
 
@@ -33,7 +34,7 @@ const Column = styled('div')(({ theme }) => ({
 
   [theme.breakpoints.down('md')]: {
     paddingRight: '0',
-    paddingBottom: '2rem'
+    marginBottom: '2rem'
   }
 }));
 
