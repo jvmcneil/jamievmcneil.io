@@ -29,9 +29,10 @@ const Column = styled('div')(({ theme }) => ({
   justifyContent: 'center',
   flexDirection: 'column',
   flex: '1',
-  paddingRight: '2.5%',
+  paddingRight: '2rem',
 
   [theme.breakpoints.down('md')]: {
+    paddingRight: '0',
     paddingBottom: '2rem'
   }
 }));
