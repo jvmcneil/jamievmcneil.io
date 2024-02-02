@@ -20,7 +20,7 @@ const App = () => {
             sx={{ width: 80, height: 80 }}
           />
 
-          <Typography variant="bodyCode" sx={{ ml: '0.875rem' }}>
+          <Typography sx={{ ml: '0.875rem' }}>
             <p>{strings.FRONTEND_SOFTWARE_DEVELOPER}</p>
 
             <p>{strings.ABOUT}</p>
