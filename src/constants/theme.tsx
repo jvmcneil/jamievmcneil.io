@@ -10,12 +10,11 @@ export const theme = createTheme({
             color: "white"
         },
         bodyCode: {
-            fontFamily: 'Fira Code',
+            // fontFamily: 'Fira Code',
             color: "white"
         }
     },
     palette: {
-        // @ts-ignore TODO: Fix TS error
-        pink: createColor('#F20587'),
+        pink: createColor("#F20587"),
     },
 });
