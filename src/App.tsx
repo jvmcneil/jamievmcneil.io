@@ -69,7 +69,7 @@ const App = () => {
               {strings.HOYLU_DATE}
             </Typography>
             <Typography variant="body1" component="p">
-              {strings.HOYLU_LOCATION}
+              {strings.FULL_TIME}
             </Typography>
           </Box>
           <Positions>
@@ -77,8 +77,11 @@ const App = () => {
               <Typography variant="h6" component="h3">
                 {strings.HOYLU_TITLE_LATEST}
               </Typography>
-              <Typography variant="body1" component="p">
+              <Typography variant="subtitle2" component="p">
                 {strings.HOYLU_TITLE_LATEST_DATES}
+              </Typography>
+              <Typography variant="subtitle2" component="p">
+                {strings.HOYLU_LOCATION_PHILLY}
               </Typography>
               <Typography variant="body1" component="p">
                 {strings.HOYLU_TITLE_LATEST_DESCRIPTION}
@@ -87,13 +90,46 @@ const App = () => {
 
             <Position>
               <Typography variant="h6" component="h3">
-                {strings.HOYLU_TITLE_LATEST}
+                {strings.HOYLU_TITLE_THIRD}
+              </Typography>
+              <Typography variant="subtitle2" component="p">
+                {strings.HOYLU_TITLE_THIRD_DATES}
+              </Typography>
+              <Typography variant="subtitle2" component="p">
+                {strings.HOYLU_LOCATION_PHILLY}
               </Typography>
               <Typography variant="body1" component="p">
-                {strings.HOYLU_TITLE_LATEST_DATES}
+                {strings.HOYLU_TITLE_THIRD_DESCRIPTION}
+              </Typography>
+            </Position>
+
+            <Position>
+              <Typography variant="h6" component="h3">
+                {strings.HOYLU_TITLE_SECOND}
+              </Typography>
+              <Typography variant="subtitle2" component="p">
+                {strings.HOYLU_TITLE_SECOND_DATES}
+              </Typography>
+              <Typography variant="subtitle2" component="p">
+                {strings.HOYLU_LOCATION_PHILLY}
               </Typography>
               <Typography variant="body1" component="p">
-                {strings.HOYLU_TITLE_LATEST_DESCRIPTION}
+                {strings.HOYLU_TITLE_SECOND_DESCRIPTION}
+              </Typography>
+            </Position>
+
+            <Position>
+              <Typography variant="h6" component="h3">
+                {strings.HOYLU_TITLE_FIRST}
+              </Typography>
+              <Typography variant="subtitle2" component="p">
+                {strings.HOYLU_TITLE_FIRST_DATES}
+              </Typography>
+              <Typography variant="subtitle2" component="p">
+                {strings.HOYLU_LOCATION_ORLANDO}
+              </Typography>
+              <Typography variant="body1" component="p">
+                {strings.HOYLU_TITLE_FIRST_DESCRIPTION}
               </Typography>
             </Position>
           </Positions>
