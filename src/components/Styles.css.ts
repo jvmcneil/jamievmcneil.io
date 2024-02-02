@@ -1,4 +1,4 @@
-import { Avatar, Box, Typography, TypographyProps, styled } from '@mui/material';
+import { Avatar, Typography, TypographyProps, styled } from '@mui/material';
 
 export const Background = styled('div')`
   position: absolute;
