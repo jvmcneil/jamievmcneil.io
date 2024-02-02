@@ -38,6 +38,20 @@ const App = () => {
             <p>{strings.ABOUT}</p>
           </Typography>
         </Box>
+
+        <Typography variant="h4" component="h2" sx={{ mt: 3, mb: 2 }}>
+          {strings.WORK_EXPERIENCE}
+        </Typography>
+
+        <Box sx={{ display: 'flex', flexDirection: 'row', alignItems: 'center' }}>
+          <div>
+            <Typography variant="h6" component="h3">
+              {strings.HOYLU}
+            </Typography>
+            <Typography variant="body1">{strings.HOYLU_DATE}</Typography>
+            <Typography variant="body1">{strings.HOYLU_LOCATION}</Typography>
+          </div>
+        </Box>
       </MarginLayout>
     </Background>
   );
