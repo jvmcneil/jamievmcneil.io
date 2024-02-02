@@ -1,4 +1,4 @@
-import { Avatar, Box, Button, Link, Typography, styled } from '@mui/material';
+import { Avatar, Box, Typography, TypographyProps, styled } from '@mui/material';
 import { strings } from './constants/strings';
 import { MarginLayout } from './components/layout';
 import Headshot from './assets/images/headshot.jpg';
@@ -15,6 +15,23 @@ const HeadshotContainer = styled(Avatar)`
     scale: 2;
     transform-origin: 35px 12px;
   }
+`;
+
+const Company = styled('div')`
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+`;
+
+const SectionHeading = styled(Typography)<TypographyProps>`
+  margin: 3rem 0 2rem;
+`;
+
+const Positions = styled('div')`
+  max-width: 25rem;
+`;
+const Position = styled('div')`
+  margin-bottom: 1.25rem;
 `;
 
 const App = () => {
@@ -39,19 +56,48 @@ const App = () => {
           </Typography>
         </Box>
 
-        <Typography variant="h4" component="h2" sx={{ mt: 3, mb: 2 }}>
+        <SectionHeading variant="h4" component="h2" sx={{ mt: 3, mb: 2 }}>
           {strings.WORK_EXPERIENCE}
-        </Typography>
+        </SectionHeading>
 
-        <Box sx={{ display: 'flex', flexDirection: 'row', alignItems: 'center' }}>
-          <div>
+        <Company>
+          <Box>
             <Typography variant="h6" component="h3">
               {strings.HOYLU}
             </Typography>
-            <Typography variant="body1">{strings.HOYLU_DATE}</Typography>
-            <Typography variant="body1">{strings.HOYLU_LOCATION}</Typography>
-          </div>
-        </Box>
+            <Typography variant="body1" component="p">
+              {strings.HOYLU_DATE}
+            </Typography>
+            <Typography variant="body1" component="p">
+              {strings.HOYLU_LOCATION}
+            </Typography>
+          </Box>
+          <Positions>
+            <Position>
+              <Typography variant="h6" component="h3">
+                {strings.HOYLU_TITLE_LATEST}
+              </Typography>
+              <Typography variant="body1" component="p">
+                {strings.HOYLU_TITLE_LATEST_DATES}
+              </Typography>
+              <Typography variant="body1" component="p">
+                {strings.HOYLU_TITLE_LATEST_DESCRIPTION}
+              </Typography>
+            </Position>
+
+            <Position>
+              <Typography variant="h6" component="h3">
+                {strings.HOYLU_TITLE_LATEST}
+              </Typography>
+              <Typography variant="body1" component="p">
+                {strings.HOYLU_TITLE_LATEST_DATES}
+              </Typography>
+              <Typography variant="body1" component="p">
+                {strings.HOYLU_TITLE_LATEST_DESCRIPTION}
+              </Typography>
+            </Position>
+          </Positions>
+        </Company>
       </MarginLayout>
     </Background>
   );
