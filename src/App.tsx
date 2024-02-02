@@ -5,35 +5,36 @@ import { MarginLayout } from './components/layout';
 import { Background, HeadshotContainer } from './components/Styles.css';
 import WorkExperience from './components/WorkExperience';
 import Education from './components/Education';
+import Footer from './components/Footer';
 
-const App = () => {
-  return (
-    <Background>
-      <MarginLayout>
-        <Typography variant="h3" component="h1">
-          {strings.HELLO}
+const App = () => (
+  <Background>
+    <MarginLayout>
+      <Typography variant="h3" component="h1">
+        {strings.HELLO}
+      </Typography>
+
+      <Box sx={{ display: 'flex', flexDirection: 'row', alignItems: 'center' }}>
+        <HeadshotContainer
+          alt="Jamie McNeil Headshot"
+          src={Headshot}
+          sx={{ width: 80, height: 80 }}
+        />
+
+        <Typography sx={{ ml: '0.875rem' }}>
+          <p>{strings.FRONTEND_SOFTWARE_DEVELOPER}</p>
+
+          <p>{strings.ABOUT}</p>
         </Typography>
+      </Box>
 
-        <Box sx={{ display: 'flex', flexDirection: 'row', alignItems: 'center' }}>
-          <HeadshotContainer
-            alt="Jamie McNeil Headshot"
-            src={Headshot}
-            sx={{ width: 80, height: 80 }}
-          />
+      <WorkExperience />
 
-          <Typography sx={{ ml: '0.875rem' }}>
-            <p>{strings.FRONTEND_SOFTWARE_DEVELOPER}</p>
+      <Education />
 
-            <p>{strings.ABOUT}</p>
-          </Typography>
-        </Box>
-
-        <WorkExperience />
-
-        <Education />
-      </MarginLayout>
-    </Background>
-  );
-};
+      <Footer />
+    </MarginLayout>
+  </Background>
+);
 
 export default App;
