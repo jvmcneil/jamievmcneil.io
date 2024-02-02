@@ -27,7 +27,7 @@ const WorkExperience = () => (
           dates={strings.HOYLU_TITLE_LATEST_DATES}
           location={strings.HOYLU_LOCATION_PHILLY}
           description={strings.HOYLU_TITLE_LATEST_DESCRIPTION}
-          skills={['React', 'TypeScript']}
+          skills={['React.js', 'TypeScript', 'Redux', 'MongoDB', 'Python', 'Kotlin']}
         />
 
         <Position
@@ -35,7 +35,7 @@ const WorkExperience = () => (
           dates={strings.HOYLU_TITLE_THIRD_DATES}
           location={strings.HOYLU_LOCATION_PHILLY}
           description={strings.HOYLU_TITLE_THIRD_DESCRIPTION}
-          skills={['React', 'TypeScript']}
+          skills={['React.js', 'TypeScript', 'Redux', 'MongoDB', 'Python', 'Kotlin']}
         />
 
         <Position
@@ -43,7 +43,7 @@ const WorkExperience = () => (
           dates={strings.HOYLU_TITLE_SECOND_DATES}
           location={strings.HOYLU_LOCATION_PHILLY}
           description={strings.HOYLU_TITLE_SECOND_DESCRIPTION}
-          skills={['React', 'TypeScript']}
+          skills={['React.js', 'Redux', 'Cordova', 'Android Studio', 'Xcode']}
         />
 
         <Position
@@ -51,7 +51,7 @@ const WorkExperience = () => (
           dates={strings.HOYLU_TITLE_FIRST_DATES}
           location={strings.HOYLU_LOCATION_ORLANDO}
           description={strings.HOYLU_TITLE_FIRST_DESCRIPTION}
-          skills={['React', 'TypeScript']}
+          skills={['PHP', 'MySQL', 'JavaScript', 'WordPress', 'REST API']}
         />
       </Positions>
     </Company>
@@ -73,7 +73,7 @@ const WorkExperience = () => (
           title={strings.QUADSIMIA_TITLE}
           location={strings.UTICA}
           description={strings.QUADSIMIA_DESCRIPTION}
-          skills={['React', 'TypeScript']}
+          skills={['HTML', 'CSS', 'PHP', 'MySQL', 'WordPress']}
         />
       </Positions>
     </Company>
@@ -95,7 +95,7 @@ const WorkExperience = () => (
           title={strings.SUNY_TITLE}
           location={strings.UTICA}
           description={strings.SUNY_DESCRIPTION}
-          skills={['React', 'TypeScript']}
+          skills={['HTML', 'CSS', 'PHP', 'WordPress', 'Photoshop']}
         />
       </Positions>
     </Company>
@@ -117,7 +117,7 @@ const WorkExperience = () => (
           title={strings.GRAPHIC_HIVE_TITLE}
           location={strings.GRAPHIC_HIVE_LOCATION}
           description={strings.GRAPHIC_HIVE_DESCRIPTION}
-          skills={['React', 'TypeScript']}
+          skills={['HTML', 'CSS', 'PHP', 'WordPress']}
         />
       </Positions>
     </Company>
