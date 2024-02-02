@@ -6,7 +6,7 @@ interface MarginLayoutProps {
 }
 
 const MarginLayout = (props: MarginLayoutProps) => {
-    return <Box sx={{ m: '2rem' }}>{props.children}</Box>;
+    return <Box sx={{ m: '2rem auto', maxWidth: 660, width: '100%' }}>{props.children}</Box>;
 }
 
 export default MarginLayout;
