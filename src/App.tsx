@@ -4,6 +4,7 @@ import { strings } from './constants/strings';
 import { MarginLayout } from './components/layout';
 import { Background, HeadshotContainer } from './components/Styles.css';
 import WorkExperience from './components/WorkExperience';
+import Education from './components/Education';
 
 const App = () => {
   return (
@@ -28,6 +29,8 @@ const App = () => {
         </Box>
 
         <WorkExperience />
+
+        <Education />
       </MarginLayout>
     </Background>
   );

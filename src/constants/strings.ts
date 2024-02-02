@@ -44,5 +44,11 @@ export const strings = {
   GRAPHIC_HIVE_TITLE: 'Web Developer',
   GRAPHIC_HIVE_LOCATION: 'Williamsport, PA',
   GRAPHIC_HIVE_DESCRIPTION:
-    'Through the use of WordPress, I worked to create websites and designs that were worthy of The Graphic Hive’s award-winning prestige. I quickly learned how to achieve their mission of creating websites that stand out, have massive visual appeal, useful SEO-rich content, user-friendly tools, and clear navigation.'
+    'Through the use of WordPress, I worked to create websites and designs that were worthy of The Graphic Hive’s award-winning prestige. I quickly learned how to achieve their mission of creating websites that stand out, have massive visual appeal, useful SEO-rich content, user-friendly tools, and clear navigation.',
+  EDUCATION: 'Education',
+  SUNY_EDU_DATES: '2012 - 2016',
+  BS: 'Bachelor of Science (B.S.)',
+  CID: 'Communication and Information Design',
+  SUNY_EDU_DESCRIPTION:
+    'This program focused on all aspects of digital information design and communication: designing, planning, organizing, writing and deploying digital media including games, social, personal and professional media.'
 };
