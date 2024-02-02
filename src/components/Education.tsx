@@ -1,6 +1,6 @@
 import { Box, Typography } from '@mui/material';
 import { strings } from '../constants/strings';
-import { Company, Position, Positions, SectionHeading } from './Styles.css';
+import { Company, PositionContainer, Positions, SectionHeading } from './Styles.css';
 
 const Education = () => (
   <>
@@ -18,7 +18,7 @@ const Education = () => (
         </Typography>
       </Box>
       <Positions>
-        <Position>
+        <PositionContainer>
           <Typography variant="h6" component="h3">
             {strings.BS}
           </Typography>
@@ -28,7 +28,7 @@ const Education = () => (
           <Typography variant="body1" component="p">
             {strings.SUNY_EDU_DESCRIPTION}
           </Typography>
-        </Position>
+        </PositionContainer>
       </Positions>
     </Company>
   </>

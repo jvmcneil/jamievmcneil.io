@@ -27,6 +27,6 @@ export const SectionHeading = styled(Typography)<TypographyProps>`
 export const Positions = styled('div')`
   max-width: 25rem;
 `;
-export const Position = styled('div')`
+export const PositionContainer = styled('div')`
   margin-bottom: 1.25rem;
 `;
