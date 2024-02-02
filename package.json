@@ -1,5 +1,5 @@
 {
-  "name": "my-app",
+  "name": "jamievmcneil.io",
   "version": "0.1.0",
   "private": true,
   "dependencies": {
@@ -47,5 +47,10 @@
   },
   "devDependencies": {
     "prettier": "2.7.1"
-  }
+  },
+  "description": "My personal website.",
+  "main": "index.tsx",
+  "repository": "https://github.com/mcneiljv/jamievmcneil.io.git",
+  "author": "Jamie McNeil <42184621+mcneiljv@users.noreply.github.com>",
+  "license": "MIT"
 }
