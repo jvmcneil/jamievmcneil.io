@@ -5,16 +5,18 @@ import { createTheme } from '@mui/material';
 // const createColor = (mainColor: string) => augmentColor({ color: { main: mainColor } });
 
 export const theme = createTheme({
+  components: {
+    MuiChip: {
+      styleOverrides: {
+        colorPrimary: {
+          backgroundColor: '#26292B'
+        }
+      }
+    }
+  },
   typography: {
     allVariants: {
       color: 'white'
     }
-    // bodyCode: {
-    //     // fontFamily: 'Fira Code',
-    //     color: "white"
-    // }
   }
-  //   palette: {
-  //     pink: createColor('#F20587')
-  //   }
 });
