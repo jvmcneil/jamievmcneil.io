@@ -1,6 +1,7 @@
 import { Box, Typography } from '@mui/material';
 import { strings } from '../constants/strings';
-import { Company, Position, Positions, SectionHeading } from './Styles.css';
+import { Company, Positions, SectionHeading } from './Styles.css';
+import Position from './Position';
 
 const WorkExperience = () => (
   <>
@@ -21,65 +22,37 @@ const WorkExperience = () => (
         </Typography>
       </Box>
       <Positions>
-        <Position>
-          <Typography variant="h6" component="h3">
-            {strings.HOYLU_TITLE_LATEST}
-          </Typography>
-          <Typography variant="subtitle2" component="p">
-            {strings.HOYLU_TITLE_LATEST_DATES}
-          </Typography>
-          <Typography variant="subtitle2" component="p">
-            {strings.HOYLU_LOCATION_PHILLY}
-          </Typography>
-          <Typography variant="body1" component="p">
-            {strings.HOYLU_TITLE_LATEST_DESCRIPTION}
-          </Typography>
-        </Position>
+        <Position
+          title={strings.HOYLU_TITLE_LATEST}
+          dates={strings.HOYLU_TITLE_LATEST_DATES}
+          location={strings.HOYLU_LOCATION_PHILLY}
+          description={strings.HOYLU_TITLE_LATEST_DESCRIPTION}
+          skills={['React', 'TypeScript']}
+        />
 
-        <Position>
-          <Typography variant="h6" component="h3">
-            {strings.HOYLU_TITLE_THIRD}
-          </Typography>
-          <Typography variant="subtitle2" component="p">
-            {strings.HOYLU_TITLE_THIRD_DATES}
-          </Typography>
-          <Typography variant="subtitle2" component="p">
-            {strings.HOYLU_LOCATION_PHILLY}
-          </Typography>
-          <Typography variant="body1" component="p">
-            {strings.HOYLU_TITLE_THIRD_DESCRIPTION}
-          </Typography>
-        </Position>
+        <Position
+          title={strings.HOYLU_TITLE_THIRD}
+          dates={strings.HOYLU_TITLE_THIRD_DATES}
+          location={strings.HOYLU_LOCATION_PHILLY}
+          description={strings.HOYLU_TITLE_THIRD_DESCRIPTION}
+          skills={['React', 'TypeScript']}
+        />
 
-        <Position>
-          <Typography variant="h6" component="h3">
-            {strings.HOYLU_TITLE_SECOND}
-          </Typography>
-          <Typography variant="subtitle2" component="p">
-            {strings.HOYLU_TITLE_SECOND_DATES}
-          </Typography>
-          <Typography variant="subtitle2" component="p">
-            {strings.HOYLU_LOCATION_PHILLY}
-          </Typography>
-          <Typography variant="body1" component="p">
-            {strings.HOYLU_TITLE_SECOND_DESCRIPTION}
-          </Typography>
-        </Position>
+        <Position
+          title={strings.HOYLU_TITLE_SECOND}
+          dates={strings.HOYLU_TITLE_SECOND_DATES}
+          location={strings.HOYLU_LOCATION_PHILLY}
+          description={strings.HOYLU_TITLE_SECOND_DESCRIPTION}
+          skills={['React', 'TypeScript']}
+        />
 
-        <Position>
-          <Typography variant="h6" component="h3">
-            {strings.HOYLU_TITLE_FIRST}
-          </Typography>
-          <Typography variant="subtitle2" component="p">
-            {strings.HOYLU_TITLE_FIRST_DATES}
-          </Typography>
-          <Typography variant="subtitle2" component="p">
-            {strings.HOYLU_LOCATION_ORLANDO}
-          </Typography>
-          <Typography variant="body1" component="p">
-            {strings.HOYLU_TITLE_FIRST_DESCRIPTION}
-          </Typography>
-        </Position>
+        <Position
+          title={strings.HOYLU_TITLE_FIRST}
+          dates={strings.HOYLU_TITLE_FIRST_DATES}
+          location={strings.HOYLU_LOCATION_ORLANDO}
+          description={strings.HOYLU_TITLE_FIRST_DESCRIPTION}
+          skills={['React', 'TypeScript']}
+        />
       </Positions>
     </Company>
 
@@ -96,17 +69,12 @@ const WorkExperience = () => (
         </Typography>
       </Box>
       <Positions>
-        <Position>
-          <Typography variant="h6" component="h3">
-            {strings.QUADSIMIA_TITLE}
-          </Typography>
-          <Typography variant="subtitle2" component="p">
-            {strings.UTICA}
-          </Typography>
-          <Typography variant="body1" component="p">
-            {strings.QUADSIMIA_DESCRIPTION}
-          </Typography>
-        </Position>
+        <Position
+          title={strings.QUADSIMIA_TITLE}
+          location={strings.UTICA}
+          description={strings.QUADSIMIA_DESCRIPTION}
+          skills={['React', 'TypeScript']}
+        />
       </Positions>
     </Company>
 
@@ -123,17 +91,12 @@ const WorkExperience = () => (
         </Typography>
       </Box>
       <Positions>
-        <Position>
-          <Typography variant="h6" component="h3">
-            {strings.SUNY_TITLE}
-          </Typography>
-          <Typography variant="subtitle2" component="p">
-            {strings.UTICA}
-          </Typography>
-          <Typography variant="body1" component="p">
-            {strings.SUNY_DESCRIPTION}
-          </Typography>
-        </Position>
+        <Position
+          title={strings.SUNY_TITLE}
+          location={strings.UTICA}
+          description={strings.SUNY_DESCRIPTION}
+          skills={['React', 'TypeScript']}
+        />
       </Positions>
     </Company>
 
@@ -150,17 +113,12 @@ const WorkExperience = () => (
         </Typography>
       </Box>
       <Positions>
-        <Position>
-          <Typography variant="h6" component="h3">
-            {strings.GRAPHIC_HIVE_TITLE}
-          </Typography>
-          <Typography variant="subtitle2" component="p">
-            {strings.GRAPHIC_HIVE_LOCATION}
-          </Typography>
-          <Typography variant="body1" component="p">
-            {strings.GRAPHIC_HIVE_DESCRIPTION}
-          </Typography>
-        </Position>
+        <Position
+          title={strings.GRAPHIC_HIVE_TITLE}
+          location={strings.GRAPHIC_HIVE_LOCATION}
+          description={strings.GRAPHIC_HIVE_DESCRIPTION}
+          skills={['React', 'TypeScript']}
+        />
       </Positions>
     </Company>
   </>
