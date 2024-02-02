@@ -38,41 +38,6 @@ const App = () => {
             <p>{strings.ABOUT}</p>
           </Typography>
         </Box>
-
-        {/* <Button
-          component={Link}
-          href="mailto:jamievmcneil@gmail.com?subject=Jamie%20McNeil%20Website%20Enquiry"
-          underline="none"
-          target="_blank"
-          variant="contained"
-          color="pink"
-          sx={{ width: 'fit-content' }}>
-          {strings.GET_IN_TOUCH}
-        </Button>
-
-        <Typography variant="bodyCode">{strings.ABOUT}</Typography>
-
-        <Typography variant="bodyCode">{strings.EXPERIENCE}</Typography>
-
-        <Link
-          href="https://www.linkedin.com/in/jamiemcneil/"
-          underline="none"
-          target="_blank"
-          rel="noopener">
-          <Typography variant="body1">LinkedIn</Typography>
-        </Link>
-
-        <Link href="https://github.com/jvmcneil" underline="none" target="_blank" rel="noopener">
-          <Typography variant="body1">GitHub</Typography>
-        </Link>
-
-        <Link
-          href="https://www.instagram.com/radicalnetrunner/"
-          underline="none"
-          target="_blank"
-          rel="noopener">
-          <Typography variant="body1">Instagram</Typography>
-        </Link> */}
       </MarginLayout>
     </Background>
   );
