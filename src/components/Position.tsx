@@ -6,7 +6,7 @@ interface PositionProps {
   dates?: string;
   location: string;
   description: string;
-  skills: string[];
+  skills?: string[];
 }
 
 const Position = ({ title, dates, location, description, skills }: PositionProps) => (
@@ -23,11 +23,13 @@ const Position = ({ title, dates, location, description, skills }: PositionProps
     <Typography variant="body1" component="p">
       {description}
     </Typography>
-    <Stack direction="row" spacing={1}>
-      {skills.map((skill) => (
-        <Chip label={skill} color="primary" size="small" />
-      ))}
-    </Stack>
+    {skills && (
+      <Stack direction="row" spacing={1}>
+        {skills.map((skill) => (
+          <Chip label={skill} color="primary" size="small" />
+        ))}
+      </Stack>
+    )}
   </PositionContainer>
 );
 
