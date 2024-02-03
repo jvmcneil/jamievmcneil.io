@@ -6,6 +6,7 @@ import { Background, HeadshotContainer } from './components/Styles.css';
 import WorkExperience from './components/WorkExperience';
 import Education from './components/Education';
 import Footer from './components/Footer';
+import SideProjects from './components/SideProjects';
 
 const App = () => (
   <Background>
@@ -31,6 +32,8 @@ const App = () => (
       <WorkExperience />
 
       <Education />
+
+      <SideProjects />
 
       <Footer />
     </MarginLayout>

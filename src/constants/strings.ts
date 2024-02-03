@@ -50,5 +50,11 @@ export const strings = {
   BS: 'Bachelor of Science (B.S.)',
   CID: 'Communication and Information Design',
   SUNY_EDU_DESCRIPTION:
-    'This program focused on all aspects of digital information design and communication: designing, planning, organizing, writing and deploying digital media including games, social, personal and professional media.'
+    'This program focused on all aspects of digital information design and communication: designing, planning, organizing, writing and deploying digital media including games, social, personal and professional media.',
+  SIDE_PROJECTS: 'Side Projects',
+  LINGUIST: 'Linguist',
+  LINGUIST_DATES: '2022 - Present',
+  MOBILE_APP: 'React Native Mobile App',
+  LINGUIST_DESCRIPTION:
+    "Linguist is a mobile app built with React Native and Expo. It's purpose is to connect translators with people who don't speak the native language of the country they are traveling to."
 };
