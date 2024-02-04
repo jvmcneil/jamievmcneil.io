@@ -15,28 +15,27 @@ const App = () => {
   const themeContext = useContext(ThemeWrapperContext);
 
   return (
-    <div>
+    <Box>
       {/* <ThemeSwitch sx={{ m: 1 }} onChange={themeContext.toggleColorMode} />
        */}
-      <IconButton
-        sx={{ fontSize: '1rem' }}
-        onClick={themeContext.toggleColorMode}
-        color="inherit"
-        disableTouchRipple
-        disableRipple>
-        {theme.palette.mode === 'dark' ? (
-          <span role="img" aria-label="sun">
-            Go Light ☀️
-          </span>
-        ) : (
-          <span role="img" aria-label="moon">
-            Go Dark 🌚
-          </span>
-        )}
-      </IconButton>
-
       <Background sx={{ bgcolor: 'background.default', color: 'text.primary' }}>
         <MarginLayout>
+          <IconButton
+            sx={{ fontSize: '1rem' }}
+            onClick={themeContext.toggleColorMode}
+            color="inherit"
+            disableTouchRipple
+            disableRipple>
+            {theme.palette.mode === 'dark' ? (
+              <span role="img" aria-label="sun">
+                Go Light ☀️
+              </span>
+            ) : (
+              <span role="img" aria-label="moon">
+                Go Dark 🌚
+              </span>
+            )}
+          </IconButton>
           <Typography variant="h3" component="h1">
             {strings.HELLO}
           </Typography>
@@ -64,7 +63,7 @@ const App = () => {
           <Footer />
         </MarginLayout>
       </Background>
-    </div>
+    </Box>
   );
 };
 
