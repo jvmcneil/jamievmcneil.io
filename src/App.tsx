@@ -1,3 +1,4 @@
+import { useContext } from 'react';
 import { Box, Typography } from '@mui/material';
 import Headshot from './assets/images/headshot.jpg';
 import { strings } from './constants/strings';
@@ -8,7 +9,6 @@ import WorkExperience from './components/WorkExperience';
 import Education from './components/Education';
 import Footer from './components/Footer';
 import SideProjects from './components/SideProjects';
-import { useContext } from 'react';
 
 const App = () => {
   const themeContext = useContext(ThemeWrapperContext);
