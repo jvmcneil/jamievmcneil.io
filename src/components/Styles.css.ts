@@ -47,11 +47,13 @@ export const ThemeSwitch = styled(Switch)(({ theme }) => ({
   }
 }));
 
+// TODO: Figure out why negative margin is needed
 export const Background = styled('div')`
   position: absolute;
   background-color: #000;
   width: 100%;
   min-height: 100%;
+  margin: -8px;
 `;
 
 export const HeadshotContainer = styled(Avatar)`
