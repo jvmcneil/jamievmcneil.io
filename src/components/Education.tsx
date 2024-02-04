@@ -1,6 +1,6 @@
 import { Box, Typography } from '@mui/material';
 import { strings } from '../constants/strings';
-import { Company, PositionContainer, Positions, SectionHeading } from './Styles.css';
+import { Company, Positions, SectionHeading } from './Styles.css';
 import Position from './Position';
 
 const Education = () => (

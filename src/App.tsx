@@ -1,4 +1,4 @@
-import { Box, IconButton, Typography, useTheme } from '@mui/material';
+import { Box, Typography } from '@mui/material';
 import Headshot from './assets/images/headshot.jpg';
 import { strings } from './constants/strings';
 import { MarginLayout } from './components/layout';
@@ -11,7 +11,6 @@ import SideProjects from './components/SideProjects';
 import { useContext } from 'react';
 
 const App = () => {
-  const theme = useTheme();
   const themeContext = useContext(ThemeWrapperContext);
 
   return (
