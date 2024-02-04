@@ -1,37 +1,56 @@
 import { createContext, ReactNode, useMemo, useState } from 'react';
-import { ThemeProvider, PaletteMode, createTheme } from '@mui/material';
+import { ThemeProvider, createTheme } from '@mui/material';
 
 export const ThemeWrapperContext = createContext({
   toggleColorMode: () => {}
 });
 
 export default function ThemeWrapper({ children }: { children: ReactNode }) {
-  const [mode, setMode] = useState<PaletteMode>('light');
+  const [lightMode, setLightMode] = useState<boolean>(false);
 
-  const theme = useMemo(
-    () =>
-      createTheme({
-        palette: {
-          mode
-        },
-        components: {
-          MuiChip: {
-            styleOverrides: {
-              colorPrimary: {
-                backgroundColor: mode === 'light' ? '#000' : '#26292B',
-                color: '#fff'
-              }
-            }
+  const lightTheme = createTheme({
+    palette: {
+      background: {
+        default: '#fff'
+      }
+    },
+    components: {
+      MuiChip: {
+        styleOverrides: {
+          colorPrimary: {
+            backgroundColor: '#eceef0',
+            color: '#000'
           }
         }
-      }),
-    [mode]
-  );
+      }
+    }
+  });
+
+  const darkTheme = createTheme({
+    palette: {
+      background: {
+        default: '#000'
+      },
+      text: {
+        primary: '#fff'
+      }
+    },
+    components: {
+      MuiChip: {
+        styleOverrides: {
+          colorPrimary: {
+            backgroundColor: '#26292B',
+            color: '#fff'
+          }
+        }
+      }
+    }
+  });
 
   const themeWrapperUtils = useMemo(
     () => ({
       toggleColorMode: () => {
-        setMode((prevMode) => (prevMode === 'light' ? 'dark' : 'light'));
+        setLightMode((prev) => !prev);
       }
     }),
     []
@@ -39,7 +58,7 @@ export default function ThemeWrapper({ children }: { children: ReactNode }) {
 
   return (
     <ThemeWrapperContext.Provider value={themeWrapperUtils}>
-      <ThemeProvider theme={theme}>{children}</ThemeProvider>
+      <ThemeProvider theme={lightMode ? lightTheme : darkTheme}>{children}</ThemeProvider>
     </ThemeWrapperContext.Provider>
   );
 }
