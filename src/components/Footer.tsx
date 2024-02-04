@@ -1,4 +1,4 @@
-import { Box, Typography } from '@mui/material';
+import { Box, Link, Typography } from '@mui/material';
 
 const Footer = () => {
   const today = new Date();
@@ -13,9 +13,9 @@ const Footer = () => {
       <Typography variant="body1" component="p">
         <p>
           Copyright © {today.getFullYear()}{' '}
-          <a href="https://github.com/mcneiljv" target="_blank" rel="noreferrer nofollow">
+          <Link href="https://github.com/mcneiljv" target="_blank" rel="noreferrer nofollow">
             Jamie McNeil
-          </a>
+          </Link>
           . All rights reserved.
         </p>
       </Typography>
