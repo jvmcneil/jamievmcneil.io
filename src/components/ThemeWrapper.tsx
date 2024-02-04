@@ -1,14 +1,34 @@
-import { createTheme, ThemeProvider, PaletteMode } from '@mui/material';
-import { createContext, useMemo, useState } from 'react';
+import { createContext, ReactNode, useMemo, useState } from 'react';
+import { ThemeProvider, PaletteMode, createTheme } from '@mui/material';
 
 export const ThemeWrapperContext = createContext({
   toggleColorMode: () => {}
 });
 
-export default function ThemeWrapper({ children }: { children: React.ReactNode }) {
+export default function ThemeWrapper({ children }: { children: ReactNode }) {
   const [mode, setMode] = useState<PaletteMode>('light');
 
-  const muiWrapperUtils = useMemo(
+  const theme = useMemo(
+    () =>
+      createTheme({
+        palette: {
+          mode
+        },
+        components: {
+          MuiChip: {
+            styleOverrides: {
+              colorPrimary: {
+                backgroundColor: mode === 'light' ? '#000' : '#26292B',
+                color: '#fff'
+              }
+            }
+          }
+        }
+      }),
+    [mode]
+  );
+
+  const themeWrapperUtils = useMemo(
     () => ({
       toggleColorMode: () => {
         setMode((prevMode) => (prevMode === 'light' ? 'dark' : 'light'));
@@ -17,18 +37,8 @@ export default function ThemeWrapper({ children }: { children: React.ReactNode }
     []
   );
 
-  const theme = useMemo(
-    () =>
-      createTheme({
-        palette: {
-          mode
-        }
-      }),
-    [mode]
-  );
-
   return (
-    <ThemeWrapperContext.Provider value={muiWrapperUtils}>
+    <ThemeWrapperContext.Provider value={themeWrapperUtils}>
       <ThemeProvider theme={theme}>{children}</ThemeProvider>
     </ThemeWrapperContext.Provider>
   );

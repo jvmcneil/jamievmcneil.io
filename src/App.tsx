@@ -2,7 +2,7 @@ import { Box, IconButton, Typography, useTheme } from '@mui/material';
 import Headshot from './assets/images/headshot.jpg';
 import { strings } from './constants/strings';
 import { MarginLayout } from './components/layout';
-import ThemeWrapper, { ThemeWrapperContext } from './components/ThemeWrapper';
+import { ThemeWrapperContext } from './components/ThemeWrapper';
 import { Background, HeadshotContainer, ThemeSwitch } from './components/Styles.css';
 import WorkExperience from './components/WorkExperience';
 import Education from './components/Education';
@@ -16,26 +16,9 @@ const App = () => {
 
   return (
     <Box>
-      {/* <ThemeSwitch sx={{ m: 1 }} onChange={themeContext.toggleColorMode} />
-       */}
       <Background sx={{ bgcolor: 'background.default', color: 'text.primary' }}>
         <MarginLayout>
-          <IconButton
-            sx={{ fontSize: '1rem' }}
-            onClick={themeContext.toggleColorMode}
-            color="inherit"
-            disableTouchRipple
-            disableRipple>
-            {theme.palette.mode === 'dark' ? (
-              <span role="img" aria-label="sun">
-                Go Light ☀️
-              </span>
-            ) : (
-              <span role="img" aria-label="moon">
-                Go Dark 🌚
-              </span>
-            )}
-          </IconButton>
+          <ThemeSwitch onClick={themeContext.toggleColorMode} />
           <Typography variant="h3" component="h1">
             {strings.HELLO}
           </Typography>
