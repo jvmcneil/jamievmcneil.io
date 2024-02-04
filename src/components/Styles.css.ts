@@ -18,6 +18,7 @@ export const Company = styled('div')`
   display: flex;
   flex-direction: row;
   justify-content: space-between;
+  margin-bottom: 3rem;
 `;
 
 export const SectionHeading = styled(Typography)<TypographyProps>`

@@ -10,17 +10,19 @@ const WorkExperience = () => (
     </SectionHeading>
 
     <Company>
-      <Box>
-        <Typography variant="h6" component="h3">
-          {strings.HOYLU}
-        </Typography>
-        <Typography variant="body1" component="p">
-          {strings.HOYLU_DATES}
-        </Typography>
-        <Typography variant="body1" component="p">
-          {strings.FULL_TIME}
-        </Typography>
-      </Box>
+      <div>
+        <Box sx={{ position: 'sticky', top: '2rem' }}>
+          <Typography variant="h6" component="h3">
+            {strings.HOYLU}
+          </Typography>
+          <Typography variant="body1" component="p">
+            {strings.HOYLU_DATES}
+          </Typography>
+          <Typography variant="body1" component="p">
+            {strings.FULL_TIME}
+          </Typography>
+        </Box>
+      </div>
       <Positions>
         <Position
           title={strings.HOYLU_TITLE_LATEST}
@@ -57,17 +59,19 @@ const WorkExperience = () => (
     </Company>
 
     <Company>
-      <Box>
-        <Typography variant="h6" component="h3">
-          {strings.QUADSIMIA}
-        </Typography>
-        <Typography variant="body1" component="p">
-          {strings.QUADSIMIA_DATES}
-        </Typography>
-        <Typography variant="body1" component="p">
-          {strings.FULL_TIME}
-        </Typography>
-      </Box>
+      <div>
+        <Box sx={{ position: 'sticky', top: '2rem' }}>
+          <Typography variant="h6" component="h3">
+            {strings.QUADSIMIA}
+          </Typography>
+          <Typography variant="body1" component="p">
+            {strings.QUADSIMIA_DATES}
+          </Typography>
+          <Typography variant="body1" component="p">
+            {strings.FULL_TIME}
+          </Typography>
+        </Box>
+      </div>
       <Positions>
         <Position
           title={strings.QUADSIMIA_TITLE}
@@ -79,17 +83,19 @@ const WorkExperience = () => (
     </Company>
 
     <Company>
-      <Box>
-        <Typography variant="h6" component="h3">
-          {strings.SUNY}
-        </Typography>
-        <Typography variant="body1" component="p">
-          {strings.SUNY_DATES}
-        </Typography>
-        <Typography variant="body1" component="p">
-          {strings.PART_TIME}
-        </Typography>
-      </Box>
+      <div>
+        <Box sx={{ position: 'sticky', top: '2rem' }}>
+          <Typography variant="h6" component="h3">
+            {strings.SUNY}
+          </Typography>
+          <Typography variant="body1" component="p">
+            {strings.SUNY_DATES}
+          </Typography>
+          <Typography variant="body1" component="p">
+            {strings.PART_TIME}
+          </Typography>
+        </Box>
+      </div>
       <Positions>
         <Position
           title={strings.SUNY_TITLE}
@@ -101,17 +107,19 @@ const WorkExperience = () => (
     </Company>
 
     <Company>
-      <Box>
-        <Typography variant="h6" component="h3">
-          {strings.GRAPHIC_HIVE}
-        </Typography>
-        <Typography variant="body1" component="p">
-          {strings.GRAPHIC_HIVE_DATES}
-        </Typography>
-        <Typography variant="body1" component="p">
-          {strings.INTERNSHIP}
-        </Typography>
-      </Box>
+      <div>
+        <Box sx={{ position: 'sticky', top: '2rem' }}>
+          <Typography variant="h6" component="h3">
+            {strings.GRAPHIC_HIVE}
+          </Typography>
+          <Typography variant="body1" component="p">
+            {strings.GRAPHIC_HIVE_DATES}
+          </Typography>
+          <Typography variant="body1" component="p">
+            {strings.INTERNSHIP}
+          </Typography>
+        </Box>
+      </div>
       <Positions>
         <Position
           title={strings.GRAPHIC_HIVE_TITLE}
