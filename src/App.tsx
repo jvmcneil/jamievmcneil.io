@@ -17,10 +17,18 @@ const App = () => {
     <Box>
       <Background sx={{ bgcolor: 'background.default', color: 'text.primary' }}>
         <MarginLayout>
-          <ThemeSwitch onClick={themeContext.toggleColorMode} />
-          <Typography variant="h3" component="h1">
-            {strings.HELLO}
-          </Typography>
+          <Box
+            sx={{
+              display: 'flex',
+              flexDirection: 'row',
+              alignItems: 'center',
+              justifyContent: 'space-between'
+            }}>
+            <Typography variant="h3" component="h1">
+              {strings.HELLO}
+            </Typography>
+            <ThemeSwitch onClick={themeContext.toggleColorMode} />
+          </Box>
 
           <Box sx={{ display: 'flex', flexDirection: 'row', alignItems: 'center' }}>
             <HeadshotContainer
