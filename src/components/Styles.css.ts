@@ -50,7 +50,6 @@ export const ThemeSwitch = styled(Switch)(({ theme }) => ({
 // TODO: Figure out why negative margin is needed
 export const Background = styled('div')`
   position: absolute;
-  background-color: #000;
   width: 100%;
   min-height: 100%;
   margin: -8px;
@@ -63,12 +62,16 @@ export const HeadshotContainer = styled(Avatar)`
   }
 `;
 
-export const Company = styled('div')`
-  display: flex;
-  flex-direction: row;
-  justify-content: space-between;
-  margin-bottom: 3rem;
-`;
+export const Company = styled('div')(({ theme }) => ({
+  display: 'flex',
+  flexDirection: 'row',
+  justifyContent: 'space-between',
+  marginBottom: '3rem',
+
+  [theme.breakpoints.down('md')]: {
+    flexDirection: 'column'
+  }
+}));
 
 export const SectionHeading = styled(Typography)<TypographyProps>`
   margin: 3rem 0 2rem;
