@@ -26,7 +26,7 @@ const Position = ({ title, dates, location, description, skills }: PositionProps
     {skills && (
       <Stack direction="row" spacing={1} sx={{ mt: 1 }}>
         {skills.map((skill) => (
-          <Chip label={skill} color="primary" size="small" />
+          <Chip label={skill} color="primary" size="small" key={skill} />
         ))}
       </Stack>
     )}
