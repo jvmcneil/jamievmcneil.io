@@ -30,18 +30,18 @@ const App = () => {
             <ThemeSwitch onClick={themeContext.toggleColorMode} />
           </Box>
 
-          <Box sx={{ display: 'flex', flexDirection: 'row', alignItems: 'center' }}>
+          <Box sx={{ display: 'flex', flexDirection: 'row', alignItems: 'center', mt: 2 }}>
             <HeadshotContainer
               alt="Jamie McNeil Headshot"
               src={Headshot}
               sx={{ width: 80, height: 80 }}
             />
 
-            <Typography sx={{ ml: '0.875rem' }}>
-              <p>{strings.FRONTEND_SOFTWARE_DEVELOPER}</p>
+            <Box sx={{ ml: '0.875rem' }}>
+              <Typography sx={{ mb: 2 }}>{strings.FRONTEND_SOFTWARE_DEVELOPER}</Typography>
 
-              <p>{strings.ABOUT}</p>
-            </Typography>
+              <Typography>{strings.ABOUT}</Typography>
+            </Box>
           </Box>
 
           <WorkExperience />
