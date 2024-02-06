@@ -1,15 +1,16 @@
 import { createContext, ReactNode, useMemo, useState } from 'react';
-import { ThemeProvider, createTheme } from '@mui/material';
+import { createTheme, PaletteMode, ThemeProvider } from '@mui/material';
 
 export const ThemeWrapperContext = createContext({
   toggleColorMode: () => {}
 });
 
 export default function ThemeWrapper({ children }: { children: ReactNode }) {
-  const [lightMode, setLightMode] = useState<boolean>(false);
+  const [themeMode, setThemeMode] = useState<PaletteMode>('dark');
 
   const lightTheme = createTheme({
     palette: {
+      mode: 'light',
       background: {
         default: '#fff'
       }
@@ -28,6 +29,7 @@ export default function ThemeWrapper({ children }: { children: ReactNode }) {
 
   const darkTheme = createTheme({
     palette: {
+      mode: 'dark',
       background: {
         default: '#000'
       },
@@ -50,15 +52,18 @@ export default function ThemeWrapper({ children }: { children: ReactNode }) {
   const themeWrapperUtils = useMemo(
     () => ({
       toggleColorMode: () => {
-        setLightMode((prev) => !prev);
+        const newThemeMode = themeMode === 'light' ? 'dark' : 'light';
+        setThemeMode(newThemeMode);
       }
     }),
-    []
+    [themeMode]
   );
 
   return (
     <ThemeWrapperContext.Provider value={themeWrapperUtils}>
-      <ThemeProvider theme={lightMode ? lightTheme : darkTheme}>{children}</ThemeProvider>
+      <ThemeProvider theme={themeMode === 'light' ? lightTheme : darkTheme}>
+        {children}
+      </ThemeProvider>
     </ThemeWrapperContext.Provider>
   );
 }

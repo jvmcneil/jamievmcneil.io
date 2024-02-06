@@ -1,5 +1,5 @@
 import { useContext } from 'react';
-import { Box, Typography } from '@mui/material';
+import { Box, Typography, useTheme } from '@mui/material';
 import Headshot from './assets/images/headshot.jpg';
 import { strings } from './constants/strings';
 import { MarginLayout } from './components/layout';
@@ -11,6 +11,7 @@ import Footer from './components/Footer';
 import SideProjects from './components/SideProjects';
 
 const App = () => {
+  const theme = useTheme();
   const themeContext = useContext(ThemeWrapperContext);
 
   return (
@@ -27,7 +28,10 @@ const App = () => {
             <Typography variant="h3" component="h1">
               {strings.HELLO}
             </Typography>
-            <ThemeSwitch onClick={themeContext.toggleColorMode} />
+            <ThemeSwitch
+              onClick={() => themeContext.toggleColorMode()}
+              checked={theme?.palette?.mode === 'dark'}
+            />
           </Box>
 
           <Box sx={{ display: 'flex', flexDirection: 'row', alignItems: 'center', mt: 2 }}>
