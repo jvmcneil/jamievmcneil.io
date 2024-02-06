@@ -1,5 +1,5 @@
-import { Chip, Stack, Typography } from '@mui/material';
-import { PositionContainer } from './Styles.css';
+import { Stack, Typography } from '@mui/material';
+import { PositionContainer, Skill } from './Styles.css';
 
 interface PositionProps {
   title: string;
@@ -24,9 +24,9 @@ const Position = ({ title, dates, location, description, skills }: PositionProps
       {description}
     </Typography>
     {skills && (
-      <Stack direction="row" spacing={1} flexWrap={{ xs: 'wrap', md: 'nowrap' }} sx={{ mt: 1 }}>
+      <Stack direction="row" spacing={1} flexWrap={{ xs: 'wrap', sm: 'nowrap' }} sx={{ mt: 1 }}>
         {skills.map((skill) => (
-          <Chip label={skill} color="primary" size="small" key={skill} />
+          <Skill label={skill} color="primary" size="small" key={skill} />
         ))}
       </Stack>
     )}

@@ -1,4 +1,4 @@
-import { Avatar, Box, Switch, Typography, TypographyProps, styled } from '@mui/material';
+import { Avatar, Box, Chip, Switch, Typography, TypographyProps, styled } from '@mui/material';
 
 export const NameContainer = styled(Box)(({ theme }) => ({
   display: 'flex',
@@ -107,3 +107,9 @@ export const Positions = styled('div')`
 export const PositionContainer = styled('div')`
   margin-bottom: 1.25rem;
 `;
+
+export const Skill = styled(Chip)(({ theme }) => ({
+  [theme.breakpoints.down('sm')]: {
+    marginTop: '10px !important'
+  }
+}));
