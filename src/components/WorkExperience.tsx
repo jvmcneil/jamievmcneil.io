@@ -1,6 +1,7 @@
 import { Box, Typography } from '@mui/material';
 import { strings } from '../constants/strings';
-import { Company, Position, Positions, SectionHeading } from './Styles.css';
+import { Company, Positions, SectionHeading } from './Styles.css';
+import Position from './Position';
 
 const WorkExperience = () => (
   <>
@@ -9,158 +10,123 @@ const WorkExperience = () => (
     </SectionHeading>
 
     <Company>
-      <Box>
-        <Typography variant="h6" component="h3">
-          {strings.HOYLU}
-        </Typography>
-        <Typography variant="body1" component="p">
-          {strings.HOYLU_DATES}
-        </Typography>
-        <Typography variant="body1" component="p">
-          {strings.FULL_TIME}
-        </Typography>
-      </Box>
+      <div>
+        <Box sx={{ position: 'sticky', top: '2rem' }}>
+          <Typography variant="h6" component="h3">
+            {strings.HOYLU}
+          </Typography>
+          <Typography variant="body1" component="p">
+            {strings.HOYLU_DATES}
+          </Typography>
+          <Typography variant="body1" component="p">
+            {strings.FULL_TIME}
+          </Typography>
+        </Box>
+      </div>
       <Positions>
-        <Position>
-          <Typography variant="h6" component="h3">
-            {strings.HOYLU_TITLE_LATEST}
-          </Typography>
-          <Typography variant="subtitle2" component="p">
-            {strings.HOYLU_TITLE_LATEST_DATES}
-          </Typography>
-          <Typography variant="subtitle2" component="p">
-            {strings.HOYLU_LOCATION_PHILLY}
-          </Typography>
-          <Typography variant="body1" component="p">
-            {strings.HOYLU_TITLE_LATEST_DESCRIPTION}
-          </Typography>
-        </Position>
+        <Position
+          title={strings.HOYLU_TITLE_LATEST}
+          dates={strings.HOYLU_TITLE_LATEST_DATES}
+          location={strings.HOYLU_LOCATION_PHILLY}
+          description={strings.HOYLU_TITLE_LATEST_DESCRIPTION}
+          skills={['React.js', 'TypeScript', 'Redux', 'MongoDB', 'Python', 'Kotlin']}
+        />
 
-        <Position>
-          <Typography variant="h6" component="h3">
-            {strings.HOYLU_TITLE_THIRD}
-          </Typography>
-          <Typography variant="subtitle2" component="p">
-            {strings.HOYLU_TITLE_THIRD_DATES}
-          </Typography>
-          <Typography variant="subtitle2" component="p">
-            {strings.HOYLU_LOCATION_PHILLY}
-          </Typography>
-          <Typography variant="body1" component="p">
-            {strings.HOYLU_TITLE_THIRD_DESCRIPTION}
-          </Typography>
-        </Position>
+        <Position
+          title={strings.HOYLU_TITLE_THIRD}
+          dates={strings.HOYLU_TITLE_THIRD_DATES}
+          location={strings.HOYLU_LOCATION_PHILLY}
+          description={strings.HOYLU_TITLE_THIRD_DESCRIPTION}
+          skills={['React.js', 'TypeScript', 'Redux', 'MongoDB', 'Python', 'Kotlin']}
+        />
 
-        <Position>
-          <Typography variant="h6" component="h3">
-            {strings.HOYLU_TITLE_SECOND}
-          </Typography>
-          <Typography variant="subtitle2" component="p">
-            {strings.HOYLU_TITLE_SECOND_DATES}
-          </Typography>
-          <Typography variant="subtitle2" component="p">
-            {strings.HOYLU_LOCATION_PHILLY}
-          </Typography>
-          <Typography variant="body1" component="p">
-            {strings.HOYLU_TITLE_SECOND_DESCRIPTION}
-          </Typography>
-        </Position>
+        <Position
+          title={strings.HOYLU_TITLE_SECOND}
+          dates={strings.HOYLU_TITLE_SECOND_DATES}
+          location={strings.HOYLU_LOCATION_PHILLY}
+          description={strings.HOYLU_TITLE_SECOND_DESCRIPTION}
+          skills={['React.js', 'Redux', 'Cordova', 'Android Studio', 'Xcode']}
+        />
 
-        <Position>
-          <Typography variant="h6" component="h3">
-            {strings.HOYLU_TITLE_FIRST}
-          </Typography>
-          <Typography variant="subtitle2" component="p">
-            {strings.HOYLU_TITLE_FIRST_DATES}
-          </Typography>
-          <Typography variant="subtitle2" component="p">
-            {strings.HOYLU_LOCATION_ORLANDO}
-          </Typography>
-          <Typography variant="body1" component="p">
-            {strings.HOYLU_TITLE_FIRST_DESCRIPTION}
-          </Typography>
-        </Position>
+        <Position
+          title={strings.HOYLU_TITLE_FIRST}
+          dates={strings.HOYLU_TITLE_FIRST_DATES}
+          location={strings.HOYLU_LOCATION_ORLANDO}
+          description={strings.HOYLU_TITLE_FIRST_DESCRIPTION}
+          skills={['PHP', 'MySQL', 'JavaScript', 'WordPress', 'REST API']}
+        />
       </Positions>
     </Company>
 
     <Company>
-      <Box>
-        <Typography variant="h6" component="h3">
-          {strings.QUADSIMIA}
-        </Typography>
-        <Typography variant="body1" component="p">
-          {strings.QUADSIMIA_DATES}
-        </Typography>
-        <Typography variant="body1" component="p">
-          {strings.FULL_TIME}
-        </Typography>
-      </Box>
-      <Positions>
-        <Position>
+      <div>
+        <Box sx={{ position: 'sticky', top: '2rem' }}>
           <Typography variant="h6" component="h3">
-            {strings.QUADSIMIA_TITLE}
-          </Typography>
-          <Typography variant="subtitle2" component="p">
-            {strings.UTICA}
+            {strings.QUADSIMIA}
           </Typography>
           <Typography variant="body1" component="p">
-            {strings.QUADSIMIA_DESCRIPTION}
+            {strings.QUADSIMIA_DATES}
           </Typography>
-        </Position>
+          <Typography variant="body1" component="p">
+            {strings.FULL_TIME}
+          </Typography>
+        </Box>
+      </div>
+      <Positions>
+        <Position
+          title={strings.QUADSIMIA_TITLE}
+          location={strings.UTICA}
+          description={strings.QUADSIMIA_DESCRIPTION}
+          skills={['HTML', 'CSS', 'PHP', 'MySQL', 'WordPress']}
+        />
       </Positions>
     </Company>
 
     <Company>
-      <Box>
-        <Typography variant="h6" component="h3">
-          {strings.SUNY}
-        </Typography>
-        <Typography variant="body1" component="p">
-          {strings.SUNY_DATES}
-        </Typography>
-        <Typography variant="body1" component="p">
-          {strings.PART_TIME}
-        </Typography>
-      </Box>
-      <Positions>
-        <Position>
+      <div>
+        <Box sx={{ position: 'sticky', top: '2rem' }}>
           <Typography variant="h6" component="h3">
-            {strings.SUNY_TITLE}
-          </Typography>
-          <Typography variant="subtitle2" component="p">
-            {strings.UTICA}
+            {strings.SUNY}
           </Typography>
           <Typography variant="body1" component="p">
-            {strings.SUNY_DESCRIPTION}
+            {strings.SUNY_DATES}
           </Typography>
-        </Position>
+          <Typography variant="body1" component="p">
+            {strings.PART_TIME}
+          </Typography>
+        </Box>
+      </div>
+      <Positions>
+        <Position
+          title={strings.SUNY_TITLE}
+          location={strings.UTICA}
+          description={strings.SUNY_DESCRIPTION}
+          skills={['HTML', 'CSS', 'PHP', 'WordPress', 'Photoshop']}
+        />
       </Positions>
     </Company>
 
     <Company>
-      <Box>
-        <Typography variant="h6" component="h3">
-          {strings.GRAPHIC_HIVE}
-        </Typography>
-        <Typography variant="body1" component="p">
-          {strings.GRAPHIC_HIVE_DATES}
-        </Typography>
-        <Typography variant="body1" component="p">
-          {strings.INTERNSHIP}
-        </Typography>
-      </Box>
-      <Positions>
-        <Position>
+      <div>
+        <Box sx={{ position: 'sticky', top: '2rem' }}>
           <Typography variant="h6" component="h3">
-            {strings.GRAPHIC_HIVE_TITLE}
-          </Typography>
-          <Typography variant="subtitle2" component="p">
-            {strings.GRAPHIC_HIVE_LOCATION}
+            {strings.GRAPHIC_HIVE}
           </Typography>
           <Typography variant="body1" component="p">
-            {strings.GRAPHIC_HIVE_DESCRIPTION}
+            {strings.GRAPHIC_HIVE_DATES}
           </Typography>
-        </Position>
+          <Typography variant="body1" component="p">
+            {strings.INTERNSHIP}
+          </Typography>
+        </Box>
+      </div>
+      <Positions>
+        <Position
+          title={strings.GRAPHIC_HIVE_TITLE}
+          location={strings.GRAPHIC_HIVE_LOCATION}
+          description={strings.GRAPHIC_HIVE_DESCRIPTION}
+          skills={['HTML', 'CSS', 'PHP', 'WordPress']}
+        />
       </Positions>
     </Company>
   </>

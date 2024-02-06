@@ -1,32 +1,32 @@
 import { Box, Typography } from '@mui/material';
 import { strings } from '../constants/strings';
-import { Company, Positions, SectionHeading } from './Styles.css';
 import Position from './Position';
+import { Company, Positions, SectionHeading } from './Styles.css';
 
-const Education = () => (
+const SideProjects = () => (
   <>
     <SectionHeading variant="h4" component="h2" sx={{ mt: 3, mb: 2 }}>
-      {strings.EDUCATION}
+      {strings.SIDE_PROJECTS}
     </SectionHeading>
 
     <Company>
       <Box>
         <Typography variant="h6" component="h3">
-          {strings.SUNY}
+          {strings.LINGUIST}
         </Typography>
         <Typography variant="body1" component="p">
-          {strings.SUNY_EDU_DATES}
+          {strings.LINGUIST_DATES}
         </Typography>
       </Box>
       <Positions>
         <Position
-          title={strings.BS}
-          location={strings.CID}
-          description={strings.SUNY_EDU_DESCRIPTION}
+          title={strings.MOBILE_APP}
+          description={strings.LINGUIST_DESCRIPTION}
+          skills={['React Native', 'TypeScript', 'Expo', 'Zustand', 'Firebase']}
         />
       </Positions>
     </Company>
   </>
 );
 
-export default Education;
+export default SideProjects;
