@@ -15,8 +15,7 @@ export const NameContainer = styled(Box)(({ theme }) => ({
 export const Background = styled('div')(({ theme }) => ({
   position: 'absolute',
   width: '100%',
-  minHeight: '100%',
-  margin: '-8px'
+  minHeight: '100%'
 }));
 
 export const ThemeSwitch = styled(Switch)(({ theme }) => ({
