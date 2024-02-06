@@ -4,7 +4,12 @@ import Headshot from './assets/images/headshot.jpg';
 import { strings } from './constants/strings';
 import { MarginLayout } from './components/layout';
 import { ThemeWrapperContext } from './components/ThemeWrapper';
-import { Background, HeadshotContainer, ThemeSwitch } from './components/Styles.css';
+import {
+  Background,
+  HeadshotContainer,
+  HeadshotIntroContainer,
+  ThemeSwitch
+} from './components/Styles.css';
 import WorkExperience from './components/WorkExperience';
 import Education from './components/Education';
 import Footer from './components/Footer';
@@ -34,19 +39,19 @@ const App = () => {
             />
           </Box>
 
-          <Box sx={{ display: 'flex', flexDirection: 'row', alignItems: 'center', mt: 2 }}>
+          <HeadshotIntroContainer>
             <HeadshotContainer
               alt="Jamie McNeil Headshot"
               src={Headshot}
               sx={{ width: 80, height: 80 }}
             />
 
-            <Box sx={{ ml: '0.875rem' }}>
+            <Box sx={{ ml: '0.875rem', my: 2 }}>
               <Typography sx={{ mb: 2 }}>{strings.FRONTEND_SOFTWARE_DEVELOPER}</Typography>
 
               <Typography>{strings.ABOUT}</Typography>
             </Box>
-          </Box>
+          </HeadshotIntroContainer>
 
           <WorkExperience />
 
