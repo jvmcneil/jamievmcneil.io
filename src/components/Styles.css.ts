@@ -1,12 +1,23 @@
 import { Avatar, Box, Switch, Typography, TypographyProps, styled } from '@mui/material';
 
+export const NameContainer = styled(Box)(({ theme }) => ({
+  display: 'flex',
+  flexDirection: 'row',
+  alignItems: 'center',
+  justifyContent: 'space-between',
+
+  [theme.breakpoints.down('md')]: {
+    flexDirection: 'column'
+  }
+}));
+
 // TODO: Figure out why negative margin is needed
-export const Background = styled('div')`
-  position: absolute;
-  width: 100%;
-  min-height: 100%;
-  margin: -8px;
-`;
+export const Background = styled('div')(({ theme }) => ({
+  position: 'absolute',
+  width: '100%',
+  minHeight: '100%',
+  margin: '-8px'
+}));
 
 export const ThemeSwitch = styled(Switch)(({ theme }) => ({
   width: 62,
@@ -60,6 +71,8 @@ export const HeadshotContainer = styled(Avatar)`
     scale: 2;
     transform-origin: 35px 12px;
   }
+
+  margin-right: 0.875rem;
 `;
 
 export const HeadshotIntroContainer = styled(Box)(({ theme }) => ({
@@ -67,7 +80,6 @@ export const HeadshotIntroContainer = styled(Box)(({ theme }) => ({
   flexDirection: 'row',
   alignItems: 'center',
   marginTop: '1rem',
-  justifyContent: 'space-between',
 
   [theme.breakpoints.down('md')]: {
     flexDirection: 'column'

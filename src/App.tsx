@@ -8,6 +8,7 @@ import {
   Background,
   HeadshotContainer,
   HeadshotIntroContainer,
+  NameContainer,
   ThemeSwitch
 } from './components/Styles.css';
 import WorkExperience from './components/WorkExperience';
@@ -23,13 +24,7 @@ const App = () => {
     <Box>
       <Background sx={{ bgcolor: 'background.default', color: 'text.primary' }}>
         <MarginLayout>
-          <Box
-            sx={{
-              display: 'flex',
-              flexDirection: 'row',
-              alignItems: 'center',
-              justifyContent: 'space-between'
-            }}>
+          <NameContainer>
             <Typography variant="h3" component="h1">
               {strings.HELLO}
             </Typography>
@@ -37,7 +32,7 @@ const App = () => {
               onClick={() => themeContext.toggleColorMode()}
               checked={theme?.palette?.mode === 'dark'}
             />
-          </Box>
+          </NameContainer>
 
           <HeadshotIntroContainer>
             <HeadshotContainer
@@ -46,7 +41,7 @@ const App = () => {
               sx={{ width: 80, height: 80 }}
             />
 
-            <Box sx={{ ml: '0.875rem', my: 2 }}>
+            <Box sx={{ my: 2 }}>
               <Typography sx={{ mb: 2 }}>{strings.FRONTEND_SOFTWARE_DEVELOPER}</Typography>
 
               <Typography>{strings.ABOUT}</Typography>

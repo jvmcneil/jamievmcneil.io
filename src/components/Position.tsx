@@ -24,7 +24,7 @@ const Position = ({ title, dates, location, description, skills }: PositionProps
       {description}
     </Typography>
     {skills && (
-      <Stack direction="row" spacing={1} sx={{ mt: 1 }}>
+      <Stack direction="row" spacing={1} flexWrap={{ xs: 'wrap', md: 'nowrap' }} sx={{ mt: 1 }}>
         {skills.map((skill) => (
           <Chip label={skill} color="primary" size="small" key={skill} />
         ))}
