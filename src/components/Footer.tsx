@@ -1,25 +1,18 @@
-import { Box, Link, Typography } from '@mui/material';
+import { Link, Typography } from '@mui/material';
+import { FooterContainer } from './Styles.css';
 
 const Footer = () => {
   const today = new Date();
   return (
-    <Box
-      sx={{
-        display: 'flex',
-        flexDirection: 'column',
-        alignItems: 'flex-end',
-        my: '1.3125rem'
-      }}>
+    <FooterContainer>
       <Typography variant="body1" component="p">
-        <p>
-          Copyright © {today.getFullYear()}{' '}
-          <Link href="https://github.com/mcneiljv" target="_blank" rel="noreferrer nofollow">
-            Jamie McNeil
-          </Link>
-          . All rights reserved.
-        </p>
+        Copyright © {today.getFullYear()}{' '}
+        <Link href="https://github.com/mcneiljv" target="_blank" rel="noreferrer nofollow">
+          Jamie McNeil
+        </Link>
+        . All rights reserved.
       </Typography>
-    </Box>
+    </FooterContainer>
   );
 };
 

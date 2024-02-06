@@ -112,3 +112,15 @@ export const Skill = styled(Chip)(({ theme }) => ({
     marginTop: '10px !important'
   }
 }));
+
+export const FooterContainer = styled(Box)(({ theme }) => ({
+  display: 'flex',
+  flexDirection: 'column',
+  alignItems: 'flex-end',
+  margin: '1.3125rem 0',
+
+  [theme.breakpoints.down('sm')]: {
+    display: 'block',
+    textAlign: 'center'
+  }
+}));
