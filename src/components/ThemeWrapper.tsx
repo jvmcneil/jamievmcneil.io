@@ -37,7 +37,7 @@ export default function ThemeWrapper({ children }: { children: ReactNode }) {
     palette: {
       mode: 'dark',
       background: {
-        default: '#000'
+        default: '#010326'
       },
       text: {
         primary: '#fff'
