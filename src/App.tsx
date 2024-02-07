@@ -25,7 +25,14 @@ const App = () => {
       <GlobalStyles styles={{ body: { backgroundColor } }} />
       <MarginLayout>
         <NameContainer>
-          <Typography variant="h3" component="h1">
+          <Typography
+            variant="h3"
+            component="h1"
+            sx={{
+              backgroundImage: 'linear-gradient(45deg, #1D64F2 10%, #F07EF2 60%)',
+              backgroundClip: 'text',
+              WebkitTextFillColor: 'transparent'
+            }}>
             {strings.HELLO}
           </Typography>
           <ThemeSwitch
