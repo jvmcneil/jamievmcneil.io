@@ -6,16 +6,9 @@ export const NameContainer = styled(Box)(({ theme }) => ({
   alignItems: 'center',
   justifyContent: 'space-between',
 
-  [theme.breakpoints.down('md')]: {
+  [theme.breakpoints.down('sm')]: {
     flexDirection: 'column'
   }
-}));
-
-// TODO: Figure out why negative margin is needed
-export const Background = styled('div')(({ theme }) => ({
-  position: 'absolute',
-  width: '100%',
-  minHeight: '100%'
 }));
 
 export const ThemeSwitch = styled(Switch)(({ theme }) => ({
@@ -80,7 +73,7 @@ export const HeadshotIntroContainer = styled(Box)(({ theme }) => ({
   alignItems: 'center',
   marginTop: '1rem',
 
-  [theme.breakpoints.down('md')]: {
+  [theme.breakpoints.down('sm')]: {
     flexDirection: 'column'
   }
 }));
@@ -91,7 +84,7 @@ export const Company = styled('div')(({ theme }) => ({
   justifyContent: 'space-between',
   marginBottom: '3rem',
 
-  [theme.breakpoints.down('md')]: {
+  [theme.breakpoints.down('sm')]: {
     flexDirection: 'column'
   }
 }));
@@ -100,9 +93,31 @@ export const SectionHeading = styled(Typography)<TypographyProps>`
   margin: 3rem 0 2rem;
 `;
 
-export const Positions = styled('div')`
-  max-width: 25rem;
-`;
+export const CompanyTitle = styled(Box)(({ theme }) => ({
+  position: 'sticky',
+  top: '2rem',
+
+  [theme.breakpoints.down('sm')]: {
+    position: 'static',
+    marginBottom: '1rem'
+  }
+}));
+
+export const EducationAndProjectsTitle = styled(Box)(({ theme }) => ({
+  [theme.breakpoints.down('sm')]: {
+    marginBottom: '1rem'
+  }
+}));
+
+export const Positions = styled('div')(({ theme }) => ({
+  maxWidth: '25rem',
+
+  [theme.breakpoints.down('sm')]: {
+    maxWidth: '100%',
+    borderLeft: '3px solid red',
+    paddingLeft: '1rem'
+  }
+}));
 export const PositionContainer = styled('div')`
   margin-bottom: 1.25rem;
 `;
