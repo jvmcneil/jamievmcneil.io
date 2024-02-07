@@ -141,6 +141,12 @@ export const SocialModalContent = styled(Box)(({ theme }) => ({
   }
 }));
 
+export const SocialMediaRow = styled(Box)(({ theme }) => ({
+  display: 'flex',
+  flexDirection: 'row',
+  alignItems: 'center'
+}));
+
 export const FooterContainer = styled(Box)(({ theme }) => ({
   display: 'flex',
   flexDirection: 'column',

@@ -1,6 +1,7 @@
-import { Modal, Typography } from '@mui/material';
+import { Box, Modal, Typography } from '@mui/material';
+import EmailIcon from '@mui/icons-material/Email';
 import { strings } from '../constants/strings';
-import { SocialModalContent } from './Styles.css';
+import { SocialMediaRow, SocialModalContent } from './Styles.css';
 
 interface SocialModalProps {
   modalOpen: boolean;
@@ -17,9 +18,14 @@ const SocialModal = ({ modalOpen, handleModalToggle }: SocialModalProps) => (
       <Typography id="modal-title" variant="h6" component="h2">
         {strings.SOCIAL}
       </Typography>
-      <Typography id="modal-description" sx={{ mt: 2 }}>
-        Duis mollis, est non commodo luctus, nisi erat porttitor ligula.
-      </Typography>
+      <SocialMediaRow>
+        <EmailIcon />
+
+        <Box>
+          <Typography>test</Typography>
+          <Typography>test</Typography>
+        </Box>
+      </SocialMediaRow>
     </SocialModalContent>
   </Modal>
 );
