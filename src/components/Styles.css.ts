@@ -1,4 +1,4 @@
-import { Avatar, Box, Chip, Switch, Typography, TypographyProps, styled } from '@mui/material';
+import { Avatar, Box, Chip, Link, Switch, Typography, TypographyProps, styled } from '@mui/material';
 
 export const NameContainer = styled(Box)(({ theme }) => ({
   display: 'flex',
@@ -141,10 +141,14 @@ export const SocialModalContent = styled(Box)(({ theme }) => ({
   }
 }));
 
-export const SocialMediaRow = styled(Box)(({ theme }) => ({
+export const SocialMediaRow = styled(Link)(({ theme }) => ({
   display: 'flex',
   flexDirection: 'row',
-  alignItems: 'center'
+  alignItems: 'center',
+  marginTop: '0.5rem',
+  textDecoration: 'none',
+  color: theme.palette.text.primary,
+  cursor: 'pointer'
 }));
 
 export const FooterContainer = styled(Box)(({ theme }) => ({
