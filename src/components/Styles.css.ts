@@ -34,7 +34,7 @@ export const ThemeSwitch = styled(Switch)(({ theme }) => ({
     }
   },
   '& .MuiSwitch-thumb': {
-    backgroundColor: theme.palette.mode === 'dark' ? '#003892' : '#001e3c',
+    backgroundColor: theme.palette.mode === 'dark' ? '#172573' : '#010326',
     width: 32,
     height: 32,
     '&::before': {
@@ -114,7 +114,7 @@ export const Positions = styled('div')(({ theme }) => ({
 
   [theme.breakpoints.down('sm')]: {
     maxWidth: '100%',
-    borderLeft: '3px solid red',
+    borderLeft: '3px solid #6A66D9',
     paddingLeft: '1rem'
   }
 }));

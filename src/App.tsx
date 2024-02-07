@@ -31,7 +31,12 @@ const App = () => {
             sx={{
               backgroundImage: 'linear-gradient(45deg, #1D64F2 10%, #F07EF2 60%)',
               backgroundClip: 'text',
-              WebkitTextFillColor: 'transparent'
+              WebkitTextFillColor: 'transparent',
+              textShadow: `${
+                theme.palette.mode === 'dark'
+                  ? '0px 0px 5px rgba(255,255,255,0.5)'
+                  : '0px 0px 5px rgba(106,102,217,0.5)'
+              }`
             }}>
             {strings.HELLO}
           </Typography>
