@@ -5,7 +5,6 @@ import { strings } from './constants/strings';
 import { MarginLayout } from './components/layout';
 import { ThemeWrapperContext } from './components/ThemeWrapper';
 import {
-  Background,
   HeadshotContainer,
   HeadshotIntroContainer,
   NameContainer,
@@ -22,7 +21,7 @@ const App = () => {
   const backgroundColor = theme?.palette?.background?.default;
 
   return (
-    <Background sx={{ color: 'text.primary' }}>
+    <Box sx={{ color: 'text.primary' }}>
       <GlobalStyles styles={{ body: { backgroundColor } }} />
       <MarginLayout>
         <NameContainer>
@@ -57,7 +56,7 @@ const App = () => {
 
         <Footer />
       </MarginLayout>
-    </Background>
+    </Box>
   );
 };
 
