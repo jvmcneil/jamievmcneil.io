@@ -128,14 +128,18 @@ export const Skill = styled(Chip)(({ theme }) => ({
   }
 }));
 
-export const SocialModalContent = styled(Box)`
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  width: 400;
-  padding: 32px;
-`;
+export const SocialModalContent = styled(Box)(({ theme }) => ({
+  position: 'absolute',
+  width: '400px',
+  top: '50%',
+  left: '50%',
+  transform: 'translate(-50%, -50%)',
+  padding: '32px',
+
+  [theme.breakpoints.down('sm')]: {
+    width: '80%'
+  }
+}));
 
 export const FooterContainer = styled(Box)(({ theme }) => ({
   display: 'flex',
