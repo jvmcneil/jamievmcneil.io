@@ -22,6 +22,8 @@ const SideProjects = () => (
         <Position
           title={strings.MOBILE_APP}
           description={strings.LINGUIST_DESCRIPTION}
+          link="https://github.com/linguistteam/linguist"
+          linkText={strings.LINGUIST_REPO}
           skills={['React Native', 'TypeScript', 'Expo', 'Zustand', 'Firebase']}
         />
       </Positions>
