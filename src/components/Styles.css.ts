@@ -1,4 +1,13 @@
-import { Avatar, Box, Chip, Link, Switch, Typography, TypographyProps, styled } from '@mui/material';
+import {
+  Avatar,
+  Box,
+  Chip,
+  Link,
+  Switch,
+  Typography,
+  TypographyProps,
+  styled
+} from '@mui/material';
 
 export const NameContainer = styled(Box)(({ theme }) => ({
   display: 'flex',
