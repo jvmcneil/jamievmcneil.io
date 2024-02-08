@@ -1,4 +1,4 @@
-import { createContext, ReactNode, useEffect, useMemo, useState } from 'react';
+import { createContext, ReactNode, useMemo, useState } from 'react';
 import { createTheme, PaletteMode, ThemeProvider } from '@mui/material';
 
 export const ThemeWrapperContext = createContext({
@@ -6,13 +6,8 @@ export const ThemeWrapperContext = createContext({
 });
 
 export default function ThemeWrapper({ children }: { children: ReactNode }) {
-  const [themeMode, setThemeMode] = useState<PaletteMode>('dark');
-
-  useEffect(() => {
-    if (window.localStorage.getItem('theme')) {
-      setThemeMode(window.localStorage.getItem('theme') as PaletteMode);
-    }
-  }, []);
+  const [themeMode, setThemeMode] = useState<PaletteMode>(window.localStorage.getItem('theme')  as PaletteMode ?? 'dark');
+  
 
   const lightTheme = createTheme({
     palette: {
