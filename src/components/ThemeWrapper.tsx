@@ -6,7 +6,7 @@ export const ThemeWrapperContext = createContext({
 });
 
 export default function ThemeWrapper({ children }: { children: ReactNode }) {
-  const [themeMode, setThemeMode] = useState<PaletteMode>(window.localStorage.getItem('theme')  as PaletteMode ?? 'dark');
+  const [themeMode, setThemeMode] = useState<PaletteMode>(window.localStorage.getItem('theme') as PaletteMode ?? 'dark');
   
 
   const lightTheme = createTheme({
