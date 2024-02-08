@@ -1,5 +1,6 @@
 import { useContext, useState } from 'react';
-import { Box, GlobalStyles, Typography, useTheme } from '@mui/material';
+import { Box, Button, GlobalStyles, Typography, useTheme } from '@mui/material';
+import WavingHandIcon from '@mui/icons-material/WavingHand';
 import Headshot from './assets/images/headshot.jpg';
 import { strings } from './constants/strings';
 import { MarginLayout } from './components/layout';
@@ -62,7 +63,7 @@ const App = () => {
 
             <Typography sx={{ mb: 2 }}>{strings.ABOUT}</Typography>
 
-            <Typography onClick={() => handleModalToggle(modalOpen)}>Test</Typography>
+            <Button onClick={() => handleModalToggle(modalOpen)} variant='contained' size='small' endIcon={<WavingHandIcon />}>{strings.GET_IN_TOUCH}</Button>
           </Box>
         </HeadshotIntroContainer>
 

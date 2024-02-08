@@ -24,6 +24,17 @@ export default function ThemeWrapper({ children }: { children: ReactNode }) {
             color: '#000'
           }
         }
+      },
+            MuiButton: {
+        styleOverrides: {
+          containedPrimary: {
+            ":hover": {
+              backgroundColor: '#8885e1',
+            },
+            backgroundColor: '#6A66D9',
+            color: '#fff'
+          },
+        }
       }
     }
   });
@@ -45,6 +56,17 @@ export default function ThemeWrapper({ children }: { children: ReactNode }) {
             backgroundColor: '#26292B',
             color: '#fff'
           }
+        }
+      },
+      MuiButton: {
+        styleOverrides: {
+          containedPrimary: {
+            ":hover": {
+              backgroundColor: '#f398f5',
+            },
+            backgroundColor: '#F07EF2',
+            color: '#010326'
+          },
         }
       }
     }
