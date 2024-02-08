@@ -1,4 +1,13 @@
-import { Avatar, Box, Chip, Switch, Typography, TypographyProps, styled } from '@mui/material';
+import {
+  Avatar,
+  Box,
+  Chip,
+  Link,
+  Switch,
+  Typography,
+  TypographyProps,
+  styled
+} from '@mui/material';
 
 export const NameContainer = styled(Box)(({ theme }) => ({
   display: 'flex',
@@ -6,16 +15,9 @@ export const NameContainer = styled(Box)(({ theme }) => ({
   alignItems: 'center',
   justifyContent: 'space-between',
 
-  [theme.breakpoints.down('md')]: {
+  [theme.breakpoints.down('sm')]: {
     flexDirection: 'column'
   }
-}));
-
-// TODO: Figure out why negative margin is needed
-export const Background = styled('div')(({ theme }) => ({
-  position: 'absolute',
-  width: '100%',
-  minHeight: '100%'
 }));
 
 export const ThemeSwitch = styled(Switch)(({ theme }) => ({
@@ -41,7 +43,7 @@ export const ThemeSwitch = styled(Switch)(({ theme }) => ({
     }
   },
   '& .MuiSwitch-thumb': {
-    backgroundColor: theme.palette.mode === 'dark' ? '#003892' : '#001e3c',
+    backgroundColor: theme.palette.mode === 'dark' ? '#172573' : '#010326',
     width: 32,
     height: 32,
     '&::before': {
@@ -80,7 +82,7 @@ export const HeadshotIntroContainer = styled(Box)(({ theme }) => ({
   alignItems: 'center',
   marginTop: '1rem',
 
-  [theme.breakpoints.down('md')]: {
+  [theme.breakpoints.down('sm')]: {
     flexDirection: 'column'
   }
 }));
@@ -91,7 +93,7 @@ export const Company = styled('div')(({ theme }) => ({
   justifyContent: 'space-between',
   marginBottom: '3rem',
 
-  [theme.breakpoints.down('md')]: {
+  [theme.breakpoints.down('sm')]: {
     flexDirection: 'column'
   }
 }));
@@ -100,9 +102,31 @@ export const SectionHeading = styled(Typography)<TypographyProps>`
   margin: 3rem 0 2rem;
 `;
 
-export const Positions = styled('div')`
-  max-width: 25rem;
-`;
+export const CompanyTitle = styled(Box)(({ theme }) => ({
+  position: 'sticky',
+  top: '2rem',
+
+  [theme.breakpoints.down('sm')]: {
+    position: 'static',
+    marginBottom: '1rem'
+  }
+}));
+
+export const EducationAndProjectsTitle = styled(Box)(({ theme }) => ({
+  [theme.breakpoints.down('sm')]: {
+    marginBottom: '1rem'
+  }
+}));
+
+export const Positions = styled('div')(({ theme }) => ({
+  maxWidth: '25rem',
+
+  [theme.breakpoints.down('sm')]: {
+    maxWidth: '100%',
+    borderLeft: '3px solid #6A66D9',
+    paddingLeft: '1rem'
+  }
+}));
 export const PositionContainer = styled('div')`
   margin-bottom: 1.25rem;
 `;
@@ -111,6 +135,29 @@ export const Skill = styled(Chip)(({ theme }) => ({
   [theme.breakpoints.down('sm')]: {
     marginTop: '10px !important'
   }
+}));
+
+export const SocialModalContent = styled(Box)(({ theme }) => ({
+  position: 'absolute',
+  width: '400px',
+  top: '50%',
+  left: '50%',
+  transform: 'translate(-50%, -50%)',
+  padding: '32px',
+
+  [theme.breakpoints.down('sm')]: {
+    width: '80%'
+  }
+}));
+
+export const SocialMediaRow = styled(Link)(({ theme }) => ({
+  display: 'flex',
+  flexDirection: 'row',
+  alignItems: 'center',
+  marginTop: '0.5rem',
+  textDecoration: 'none',
+  color: theme.palette.text.primary,
+  cursor: 'pointer'
 }));
 
 export const FooterContainer = styled(Box)(({ theme }) => ({

@@ -1,7 +1,7 @@
-import { Box, Typography } from '@mui/material';
+import { Typography } from '@mui/material';
 import { strings } from '../constants/strings';
 import Position from './Position';
-import { Company, Positions, SectionHeading } from './Styles.css';
+import { Company, EducationAndProjectsTitle, Positions, SectionHeading } from './Styles.css';
 
 const SideProjects = () => (
   <>
@@ -10,18 +10,20 @@ const SideProjects = () => (
     </SectionHeading>
 
     <Company>
-      <Box>
+      <EducationAndProjectsTitle>
         <Typography variant="h6" component="h3">
           {strings.LINGUIST}
         </Typography>
         <Typography variant="body1" component="p">
           {strings.LINGUIST_DATES}
         </Typography>
-      </Box>
+      </EducationAndProjectsTitle>
       <Positions>
         <Position
           title={strings.MOBILE_APP}
           description={strings.LINGUIST_DESCRIPTION}
+          link="https://github.com/linguistteam/linguist"
+          linkText={strings.LINGUIST_REPO}
           skills={['React Native', 'TypeScript', 'Expo', 'Zustand', 'Firebase']}
         />
       </Positions>

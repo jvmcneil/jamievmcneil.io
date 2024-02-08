@@ -1,4 +1,4 @@
-import { createContext, ReactNode, useEffect, useMemo, useState } from 'react';
+import { createContext, ReactNode, useMemo, useState } from 'react';
 import { createTheme, PaletteMode, ThemeProvider } from '@mui/material';
 
 export const ThemeWrapperContext = createContext({
@@ -6,13 +6,9 @@ export const ThemeWrapperContext = createContext({
 });
 
 export default function ThemeWrapper({ children }: { children: ReactNode }) {
-  const [themeMode, setThemeMode] = useState<PaletteMode>('dark');
-
-  useEffect(() => {
-    if (window.localStorage.getItem('theme')) {
-      setThemeMode(window.localStorage.getItem('theme') as PaletteMode);
-    }
-  }, []);
+  const [themeMode, setThemeMode] = useState<PaletteMode>(
+    (window.localStorage.getItem('theme') as PaletteMode) ?? 'dark'
+  );
 
   const lightTheme = createTheme({
     palette: {
@@ -22,11 +18,30 @@ export default function ThemeWrapper({ children }: { children: ReactNode }) {
       }
     },
     components: {
+      MuiButton: {
+        styleOverrides: {
+          containedPrimary: {
+            ':hover': {
+              backgroundColor: '#8885e1'
+            },
+            backgroundColor: '#6A66D9',
+            color: '#fff'
+          }
+        }
+      },
       MuiChip: {
         styleOverrides: {
           colorPrimary: {
             backgroundColor: '#eceef0',
             color: '#000'
+          }
+        }
+      },
+      MuiLink: {
+        styleOverrides: {
+          root: {
+            color: '#6A66D9',
+            textDecorationColor: '#6A66D9'
           }
         }
       }
@@ -37,18 +52,37 @@ export default function ThemeWrapper({ children }: { children: ReactNode }) {
     palette: {
       mode: 'dark',
       background: {
-        default: '#000'
+        default: '#010326'
       },
       text: {
         primary: '#fff'
       }
     },
     components: {
+      MuiButton: {
+        styleOverrides: {
+          containedPrimary: {
+            ':hover': {
+              backgroundColor: '#f398f5'
+            },
+            backgroundColor: '#F07EF2',
+            color: '#010326'
+          }
+        }
+      },
       MuiChip: {
         styleOverrides: {
           colorPrimary: {
             backgroundColor: '#26292B',
             color: '#fff'
+          }
+        }
+      },
+      MuiLink: {
+        styleOverrides: {
+          root: {
+            color: '#F07EF2',
+            textDecorationColor: '#F07EF2'
           }
         }
       }

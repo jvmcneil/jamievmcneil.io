@@ -1,6 +1,6 @@
-import { Box, Typography } from '@mui/material';
+import { Typography } from '@mui/material';
 import { strings } from '../constants/strings';
-import { Company, Positions, SectionHeading } from './Styles.css';
+import { Company, CompanyTitle, Positions, SectionHeading } from './Styles.css';
 import Position from './Position';
 
 const WorkExperience = () => (
@@ -11,7 +11,7 @@ const WorkExperience = () => (
 
     <Company>
       <div>
-        <Box sx={{ position: 'sticky', top: '2rem' }}>
+        <CompanyTitle>
           <Typography variant="h6" component="h3">
             {strings.HOYLU}
           </Typography>
@@ -21,7 +21,7 @@ const WorkExperience = () => (
           <Typography variant="body1" component="p">
             {strings.FULL_TIME}
           </Typography>
-        </Box>
+        </CompanyTitle>
       </div>
       <Positions>
         <Position
@@ -60,7 +60,7 @@ const WorkExperience = () => (
 
     <Company>
       <div>
-        <Box sx={{ position: 'sticky', top: '2rem' }}>
+        <CompanyTitle>
           <Typography variant="h6" component="h3">
             {strings.QUADSIMIA}
           </Typography>
@@ -70,7 +70,7 @@ const WorkExperience = () => (
           <Typography variant="body1" component="p">
             {strings.FULL_TIME}
           </Typography>
-        </Box>
+        </CompanyTitle>
       </div>
       <Positions>
         <Position
@@ -84,7 +84,7 @@ const WorkExperience = () => (
 
     <Company>
       <div>
-        <Box sx={{ position: 'sticky', top: '2rem' }}>
+        <CompanyTitle>
           <Typography variant="h6" component="h3">
             {strings.SUNY}
           </Typography>
@@ -94,7 +94,7 @@ const WorkExperience = () => (
           <Typography variant="body1" component="p">
             {strings.PART_TIME}
           </Typography>
-        </Box>
+        </CompanyTitle>
       </div>
       <Positions>
         <Position
@@ -108,7 +108,7 @@ const WorkExperience = () => (
 
     <Company>
       <div>
-        <Box sx={{ position: 'sticky', top: '2rem' }}>
+        <CompanyTitle>
           <Typography variant="h6" component="h3">
             {strings.GRAPHIC_HIVE}
           </Typography>
@@ -118,7 +118,7 @@ const WorkExperience = () => (
           <Typography variant="body1" component="p">
             {strings.INTERNSHIP}
           </Typography>
-        </Box>
+        </CompanyTitle>
       </div>
       <Positions>
         <Position
