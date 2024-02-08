@@ -63,7 +63,13 @@ const App = () => {
 
             <Typography sx={{ mb: 2 }}>{strings.ABOUT}</Typography>
 
-            <Button onClick={() => handleModalToggle(modalOpen)} variant='contained' size='small' endIcon={<WavingHandIcon />}>{strings.GET_IN_TOUCH}</Button>
+            <Button
+              onClick={() => handleModalToggle(modalOpen)}
+              variant="contained"
+              size="small"
+              endIcon={<WavingHandIcon />}>
+              {strings.GET_IN_TOUCH}
+            </Button>
           </Box>
         </HeadshotIntroContainer>
 
