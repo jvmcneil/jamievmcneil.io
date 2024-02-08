@@ -57,6 +57,7 @@ export const strings = {
   MOBILE_APP: 'React Native Mobile App',
   LINGUIST_DESCRIPTION:
     "Linguist is a mobile app built with React Native and Expo. It's purpose is to connect translators for hire with people who don't speak the native language of the country they are traveling to.",
+  LINGUIST_REPO: 'Check out the Linguist repo',
   SOCIAL: 'Social',
   EMAIL: 'Email',
   EMAIL_ADDRESS: 'jamievmcneil@gmail.com',
