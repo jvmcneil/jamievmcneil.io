@@ -15,7 +15,7 @@ export const strings = {
   HOYLU_TITLE_LATEST: 'Software Engineer II and Tech Lead',
   HOYLU_TITLE_LATEST_DATES: 'Mar 2023 - Present',
   HOYLU_TITLE_LATEST_DESCRIPTION:
-    'I oversee a small team and work directly with decisionmakers to determine niche requirements for development efforts. Along with this, I develop, deploy, and troubleshoot ReactJS applications, help others via pair programming, and make critical decision on what tools/technologies should be used for a given project.',
+    'I oversee a team of developers and work directly with decision makers to determine niche requirements for development efforts. Along with this, I develop, deploy, and troubleshoot ReactJS, Python, and Kotlin  applications, help others via pair programming, and make critical decisions on what tools and technologies should be used for a given project.',
   HOYLU_TITLE_THIRD: 'Software Engineer II',
   HOYLU_TITLE_THIRD_DATES: 'Jul 2022 - Mar 2023',
   HOYLU_TITLE_THIRD_DESCRIPTION:
@@ -27,7 +27,7 @@ export const strings = {
   HOYLU_TITLE_FIRST: 'Web Developer',
   HOYLU_TITLE_FIRST_DATES: 'Oct 2018 - Jun 2020',
   HOYLU_TITLE_FIRST_DESCRIPTION:
-    'I worked daily with the marketing and engineering teams to make sure Hoylu achieved its goal of making collaboration easier for distributed teams. I built and maintained custom WordPress themes that seamlessly connect Hoylu with customers. My goal was to make the Hoylu user experience great throughout every visit to our family of websites.',
+    'I worked with the marketing and engineering teams to make sure Hoylu achieved its goal of making collaboration easier for distributed teams. I built and maintained custom WordPress themes that seamlessly connect Hoylu with customers. My goal was to make the Hoylu user experience great throughout every visit to our family of websites.',
   UTICA: 'Utica, NY',
   QUADSIMIA: 'Quadsimia, LLC',
   QUADSIMIA_DATES: 'Dec 2015 - Oct 2018',
@@ -56,7 +56,7 @@ export const strings = {
   LINGUIST_DATES: '2022 - Present',
   MOBILE_APP: 'React Native Mobile App',
   LINGUIST_DESCRIPTION:
-    "Linguist is a mobile app built with React Native and Expo. It's purpose is to connect translators for hire with people who don't speak the native language of the country they are traveling to.",
+    "Linguist is a passion project of mine that I've been developing for enjoyment. Crafted using React Native, Expo, and Firebase, it's a mobile application designed to streamline connections between freelance translators and travelers in need of language support native to their destination.",
   LINGUIST_REPO: 'Check out the Linguist repo',
   SOCIAL: 'Social',
   EMAIL: 'Email',
