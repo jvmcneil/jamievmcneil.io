@@ -15,30 +15,30 @@ export const strings = {
   HOYLU_TITLE_LATEST: 'Software Engineer II and Tech Lead',
   HOYLU_TITLE_LATEST_DATES: 'Mar 2023 - Present',
   HOYLU_TITLE_LATEST_DESCRIPTION:
-    'I oversee a team of developers and work directly with decision makers to determine niche requirements for development efforts. Along with this, I develop, deploy, and troubleshoot ReactJS, Python, and Kotlin  applications, help others via pair programming, and make critical decisions on what tools and technologies should be used for a given project.',
+    'I lead a talented team of developers and collaborate closely with key stakeholders to identify specialized requirements for our development projects. In addition, I am hands-on in developing, deploying, and resolving issues within ReactJS, Python, and Kotlin applications. I also support team members through pair programming and make crucial decisions on project tools and technologies.',
   HOYLU_TITLE_THIRD: 'Software Engineer II',
   HOYLU_TITLE_THIRD_DATES: 'Jul 2022 - Mar 2023',
   HOYLU_TITLE_THIRD_DESCRIPTION:
-    'I developed, deployed, and troubleshot ReactJS applications, helped others via pair programming, and made critical decision on what tools/technologies should be used for a given project.',
+    'I was responsible for the development, deployment, and troubleshooting of ReactJS applications. Additionally, I provided support through pair programming and played a key role in making critical decisions regarding the selection of tools and technologies for each project.',
   HOYLU_TITLE_SECOND: 'Software Engineer I',
   HOYLU_TITLE_SECOND_DATES: 'Jun 2020 - Jul 2022',
   HOYLU_TITLE_SECOND_DESCRIPTION:
-    'Worked on a team to develop, deploy, and troubleshoot ReactJS applications. This included web, Android, and iOS apps.',
+    'Collaborated within a team to develop, deploy, and troubleshoot ReactJS applications spanning web, Android, and iOS platforms.',
   HOYLU_TITLE_FIRST: 'Web Developer',
   HOYLU_TITLE_FIRST_DATES: 'Oct 2018 - Jun 2020',
   HOYLU_TITLE_FIRST_DESCRIPTION:
-    'I worked with the marketing and engineering teams to make sure Hoylu achieved its goal of making collaboration easier for distributed teams. I built and maintained custom WordPress themes that seamlessly connect Hoylu with customers. My goal was to make the Hoylu user experience great throughout every visit to our family of websites.',
+    'I developed and maintained bespoke WordPress themes that seamlessly connect Hoylu with its customers. My objective was to enhance the overall UX across all our websites, ensuring every visit to our online platforms was exceptional.',
   UTICA: 'Utica, NY',
   QUADSIMIA: 'Quadsimia, LLC',
   QUADSIMIA_DATES: 'Dec 2015 - Oct 2018',
   QUADSIMIA_TITLE: 'Web Developer and Social Media Specialist',
   QUADSIMIA_DESCRIPTION:
-    'When developing websites, I ensured cross-browser compatibility and fluid user experience. I worked with social media clients to determine niche requirements and worked diligently to meet them. Through these standards I set for my work, I developed and ran successful websites and social media campaigns.',
+    'I ensured cross-browser compatibility and optimized user experiences in website development in addition to collaborating with social media clients to meet niche requirements. Through these standards, I executed successful websites and social media campaigns.',
   SUNY: 'SUNY Polytechnic Institute',
   SUNY_DATES: 'Feb 2015 - Dec 2015',
   SUNY_TITLE: 'Web Developer and Photographer',
   SUNY_DESCRIPTION:
-    'Through the use of WordPress, I worked to build and maintain websites of the highest standard to ensure ease of use for campus staff and students. I also had the crucial task of taking high-quality pictures for use on campus websites, news releases, and social media.',
+    'This program covered digital information design and communication, encompassing designing, planning, writing, and deploying various digital media, such as games, social, personal, and professional content.',
   GRAPHIC_HIVE: 'The Graphic Hive',
   GRAPHIC_HIVE_DATES: 'Oct 2014 - Feb 2015',
   GRAPHIC_HIVE_TITLE: 'Web Developer',
