@@ -38,7 +38,7 @@ export const strings = {
   SUNY_DATES: 'Feb 2015 - Dec 2015',
   SUNY_TITLE: 'Web Developer and Photographer',
   SUNY_DESCRIPTION:
-    'This program covered digital information design and communication, encompassing designing, planning, writing, and deploying various digital media, such as games, social, personal, and professional content.',
+    'Utilizing WordPress, I dedicated myself to developing and maintaining top-tier websites, prioritizing user-friendliness for campus staff and students. Additionally, I undertook the responsibility of capturing high-quality imagery for integration across campus websites, news releases, and social media platforms.',
   GRAPHIC_HIVE: 'The Graphic Hive',
   GRAPHIC_HIVE_DATES: 'Oct 2014 - Feb 2015',
   GRAPHIC_HIVE_TITLE: 'Web Developer',
