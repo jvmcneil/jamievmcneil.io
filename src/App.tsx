@@ -1,7 +1,7 @@
 import { useContext, useState } from 'react';
 import { Box, Button, GlobalStyles, Typography, useTheme } from '@mui/material';
 import WavingHandIcon from '@mui/icons-material/WavingHand';
-import Headshot from './assets/images/headshot.jpg';
+import Jamie from './assets/images/jamie.jpg';
 import { strings } from './constants/strings';
 import { MarginLayout } from './components/layout';
 import { ThemeWrapperContext } from './components/ThemeWrapper';
@@ -54,8 +54,8 @@ const App = () => {
         <HeadshotIntroContainer>
           <HeadshotContainer
             alt="Jamie McNeil Headshot"
-            src={Headshot}
-            sx={{ width: 80, height: 80 }}
+            src={Jamie}
+            sx={{ width: 130, height: 130 }}
           />
 
           <Box sx={{ my: 2 }}>
