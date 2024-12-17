@@ -68,11 +68,6 @@ export const ThemeSwitch = styled(Switch)(({ theme }) => ({
 }));
 
 export const HeadshotContainer = styled(Avatar)`
-  img {
-    scale: 2;
-    transform-origin: 35px 12px;
-  }
-
   margin-right: 0.875rem;
 `;
 
